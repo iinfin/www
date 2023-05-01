@@ -1,14 +1,12 @@
 # [1.2.0](https://github.com/iinfin/www/compare/v1.1.3...v1.2.0) (2023-05-01)
 
-
 ### Bug Fixes
 
-* **app:** deprecated headers ([012756e](https://github.com/iinfin/www/commit/012756e27fb4d5efb646fa5cce59eb907fec7e26))
-
+-   **app:** deprecated headers ([012756e](https://github.com/iinfin/www/commit/012756e27fb4d5efb646fa5cce59eb907fec7e26))
 
 ### Features
 
-* **app:** add vercel analytics ([b58acc8](https://github.com/iinfin/www/commit/b58acc829332d02d6c7d0e1164c4a5a29353ef83))
+-   **app:** add vercel analytics ([b58acc8](https://github.com/iinfin/www/commit/b58acc829332d02d6c7d0e1164c4a5a29353ef83))
 
 ## [1.1.3](https://github.com/iinfin/www/compare/v1.1.2...v1.1.3) (2023-05-01)
 
