@@ -41,6 +41,8 @@
 ├── CODE_OF_CONDUCT
 ├── CONTRIBUTING
 ├── LICENSE
-└── README
+├── README
+├── SECURITY
+└── SUPPORT
 
 ```
