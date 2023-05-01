@@ -1,9 +1,8 @@
 ## [1.1.1](https://github.com/iinfin/www/compare/v1.1.0...v1.1.1) (2023-05-01)
 
-
 ### Bug Fixes
 
-* **app:** tailwind imports ([83bf805](https://github.com/iinfin/www/commit/83bf8055d50c6094987e5943a4dbce8d4c4b46cc))
+-   **app:** tailwind imports ([83bf805](https://github.com/iinfin/www/commit/83bf8055d50c6094987e5943a4dbce8d4c4b46cc))
 
 # [1.1.0](https://github.com/iinfin/www/compare/v1.0.0...v1.1.0) (2023-05-01)
 
