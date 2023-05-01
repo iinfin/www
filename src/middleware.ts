@@ -2,8 +2,8 @@ import type { NextFetchEvent, NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
 export async function middleware(_req: NextRequest, _next: NextFetchEvent) {
-	const mdRequestHeaders = new Headers(_req.headers);
-	const mdResponse = NextResponse.next({ request: { headers: mdRequestHeaders } });
+	const mwRequestHeaders = new Headers(_req.headers);
+	const mwResponse = NextResponse.next({ request: { headers: mwRequestHeaders } });
 
 	const forwardedFor = _req.headers.get('x-forwarded-for');
 	const ip: string = (_req.ip && _req.headers.get('x-real-ip')) || (forwardedFor ? forwardedFor.split(',').at(0) : null) || 'unknown';
@@ -14,10 +14,10 @@ export async function middleware(_req: NextRequest, _next: NextFetchEvent) {
 
 	const data = { ip, city, country, lat, lon };
 
-	mdResponse.cookies.set('x-data', JSON.stringify(data), {
+	mwResponse.cookies.set('x-data', JSON.stringify(data), {
 		httpOnly: false,
-		maxAge: 60 * 60 * 24 * 7,
+		maxAge: 60 * 60 * 24 * 7, // 1 week
 	});
 
-	return mdResponse;
+	return mwResponse;
 }

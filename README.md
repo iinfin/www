@@ -9,7 +9,6 @@
 │   │   ├── prchecks.yml            # Run checks on pull requests
 │   │   ├── prlabels.yml            # Add labels to pull requests
 │   │   ├── release.yml             # Automate release management
-│   │   └── updatee.yml             # Automate update dependencies
 │   └── prlabels.yml                # PR label options
 ├── .husky                          # Husky configuration
 ├── .vscode                         # VSCode configuration
