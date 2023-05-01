@@ -1,0 +1,25 @@
+name: Feature Request
+description: Suggest a new feature or enhancement
+labels: ['feature']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Description
+
+        Please provide a clear and concise description of the requested feature.
+
+  - type: textarea
+    id: problem-solution
+    attributes:
+      label: Problem & Solution
+      description: Explain the problem this feature will solve and how it will solve it.
+      placeholder: This feature will solve...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Please add any additional context that might help.

@@ -1,0 +1,28 @@
+app:
+  - src/app/**/*
+
+api:
+  - src/app/api/**/*
+
+config:
+  - /*rc.js
+  - /*.config.js
+
+deps:
+  - package.json
+  - package-lock.json
+
+hooks:
+  - src/app/hooks/**/*
+
+middleware:
+  - src/middleware.ts
+
+styles:
+  - src/app/styles/**/*
+
+tests:
+  - '**/*.test.js'
+
+utils:
+  - src/app/utils/**/*

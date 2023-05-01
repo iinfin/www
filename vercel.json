@@ -1,0 +1,48 @@
+{
+	"github": {
+		"silent": true
+	},
+	"headers": [
+		{
+			"source": "/(.*)",
+			"headers": [
+				{
+					"key": "Content-Security-Policy",
+					"value": "base-uri 'self'; connect-src 'self'; default-src 'none'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'self'; img-src 'self' data: 'self'; manifest-src 'self'; media-src 'self'; object-src 'none'; prefetch-src 'self'; script-src 'self' 'unsafe-inline' cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net; upgrade-insecure-requests;"
+				},
+				{
+					"key": "Expect-CT",
+					"value": "max-age=604800, report-uri=\"https://u29dc.report-uri.com/r/d/ct/enforce\""
+				},
+				{
+					"key": "Permissions-Policy",
+					"value": "fullscreen=(self)"
+				},
+				{
+					"key": "Referrer-Policy",
+					"value": "same-origin"
+				},
+				{
+					"key": "Strict-Transport-Security",
+					"value": "max-age=31557600; includesubdomains; preload"
+				},
+				{
+					"key": "Vary",
+					"value": "Accept-Encoding"
+				},
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				},
+				{
+					"key": "X-Frame-Options",
+					"value": "deny"
+				},
+				{
+					"key": "X-XSS-Protection",
+					"value": "1; mode=block"
+				}
+			]
+		}
+	]
+}

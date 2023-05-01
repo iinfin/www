@@ -1,0 +1,29 @@
+@import url('tailwindcss/base');
+@import url('tailwindcss/components');
+@import url('tailwindcss/utilities');
+
+html {
+	@apply text-root;
+}
+
+html,
+body {
+	@apply fixed inset-0 m-0 bg-black p-0 text-white;
+}
+
+body {
+	@apply font-x1 text-base font-normal leading-tight;
+}
+
+main {
+	@apply absolute inset-0 flex items-center justify-center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply uppercase;
+}
