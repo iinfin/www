@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/iinfin/www/compare/v1.1.1...v1.1.2) (2023-05-01)
+
+
+### Bug Fixes
+
+* **app:** csp for insights ([48f2569](https://github.com/iinfin/www/commit/48f2569fe0c3fe3bfa725ae658ccdf2b6b56695a))
+
 ## [1.1.1](https://github.com/iinfin/www/compare/v1.1.0...v1.1.1) (2023-05-01)
 
 ### Bug Fixes
