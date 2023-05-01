@@ -23,7 +23,7 @@
       media-src 'self';
       object-src 'none';
       prefetch-src 'self';
-      script-src 'unsafe-inline' 'self' cdn.jsdelivr.net;
+      script-src 'unsafe-inline' 'self' cdn.jsdelivr.net vitals.vercel-insights.com;
       style-src 'unsafe-inline' 'self' cdn.jsdelivr.net;
       upgrade-insecure-requests;
       """
