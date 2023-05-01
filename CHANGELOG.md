@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/iinfin/www/compare/v1.0.0...v1.1.0) (2023-05-01)
+
+
+### Features
+
+* **github:** add community files ([23f8ab5](https://github.com/iinfin/www/commit/23f8ab59f291dd3ef143e0e2023ca75db5b55707))
+
 # 1.0.0 (2023-05-01)
 
 ### Bug Fixes
