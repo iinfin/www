@@ -5,7 +5,7 @@
 	"repository": "https://github.com/iinfin/www.git",
 	"scripts": {
 		"setup------------------------------": "",
-		"dev": "cross-env NODE_OPTIONS='--inspect' next dev --turbo",
+		"dev": "cross-env NODE_OPTIONS='--inspect' next dev",
 		"build": "next build",
 		"build:cloudflare": "npx @cloudflare/next-on-pages --experimental-minify",
 		"build:stats": "cross-env ANALYZE=true npm run build",
@@ -23,11 +23,12 @@
 		"test:all": "echo \"No tests yet\""
 	},
 	"dependencies": {
-		"@next/bundle-analyzer": "^13.3.2",
+		"@next/bundle-analyzer": "^13.3.4",
+		"@vercel/analytics": "^1.0.0",
 		"autoprefixer": "^10.4.14",
 		"cssnano": "^6.0.1",
-		"framer-motion": "^10.12.4",
-		"next": "^13.3.2",
+		"framer-motion": "^10.12.5",
+		"next": "^13.3.4",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"tailwindcss": "^3.3.2"
@@ -52,7 +53,7 @@
 		"eslint": "^8.39.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-airbnb-typescript": "^17.0.0",
-		"eslint-config-next": "^13.3.2",
+		"eslint-config-next": "^13.3.4",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-jsx-a11y": "^6.7.1",
