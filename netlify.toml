@@ -22,12 +22,10 @@
       manifest-src 'self';
       media-src 'self';
       object-src 'none';
-      prefetch-src 'self';
       script-src 'unsafe-inline' 'self' cdn.jsdelivr.net vitals.vercel-insights.com;
       style-src 'unsafe-inline' 'self' cdn.jsdelivr.net;
       upgrade-insecure-requests;
       """
-    Expect-CT = "max-age=604800, report-uri=\"https://u29dc.report-uri.com/r/d/ct/enforce\""
     Permissions-Policy = "geolocation=(self), microphone=(self), camera=(self), fullscreen=(self)"
     Referrer-Policy = "same-origin"
     Strict-Transport-Security = "max-age=31557600; includesubdomains; preload"
