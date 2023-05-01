@@ -12,7 +12,7 @@
   [headers.values]
     Content-Security-Policy = """
       base-uri 'self';
-      connect-src 'self';
+      connect-src 'self' vitals.vercel-insights.com;
       default-src 'none';
       font-src 'self';
       form-action 'self';
