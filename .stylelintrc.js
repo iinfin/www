@@ -1,6 +1,10 @@
 module.exports = {
-	extends: 'stylelint-config-standard',
+	extends: [
+		// extends
+		'stylelint-config-recommended',
+		'stylelint-config-tailwindcss',
+	],
 	rules: {
-		// 'rule-empty-line-before': null,
+		// https://stylelint.io/user-guide/rules
 	},
 };
