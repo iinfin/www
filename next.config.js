@@ -12,6 +12,7 @@ const nextConfig = {
 
 	experimental: {
 		appDir: true,
+		turbo: {},
 		...(IS_CLOUDFLARE ? { runtime: 'edge' } : {}),
 	},
 

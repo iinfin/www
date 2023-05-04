@@ -1,7 +1,27 @@
 import type { ReactElement } from 'react';
-import react from 'react';
 
 export default function HeaderSubtitle(): ReactElement {
+	const items = [
+		'AN EVOLVING ENTITY',
+		'ACTING AS',
+		'A MULTIFACETED',
+		'',
+		'PRACTICE —',
+		'SPECULATING',
+		'→',
+		'ARTIFICIAL AESTHETICS',
+		'',
+		'ACROSS',
+		'MEDIUMS',
+	];
+
+	const renderItem = (item: string, index: number) => {
+		if (item === '') {
+			return <div key={index} className="w-auto xl:w-full" />;
+		}
+		return <span key={index}>{item}</span>;
+	};
+
 	return (
 		<>
 			<div className="col-span-6 md:col-span-2">
@@ -9,27 +29,9 @@ export default function HeaderSubtitle(): ReactElement {
 				<br />
 				INFINITY /
 			</div>
-			<div className="col-span-6 row-start-2 sm:col-span-4 md:col-span-2">
+			<div className="col-span-6 row-start-2 sm:col-span-4 md:col-span-3 lg:col-span-2">
 				<h4 className="font-heading-04">
-					<span className="flex flex-grow flex-wrap justify-between text-justify">
-						{[
-							'AN EVOLVING ENTITY',
-							'ACTING AS',
-							'A MULTIFACETED',
-							'',
-							'PRACTICE —',
-							'SPECULATING',
-							'→',
-							'ARTIFICIAL AESTHETICS',
-							'',
-							'ACROSS',
-							'MEDIUMS',
-						].map((item, index) => (
-							<react.Fragment key={index}>
-								{item === '' ? <div className="w-auto xl:w-full">{/* <br /> */}</div> : <span className="">{item}</span>}
-							</react.Fragment>
-						))}
-					</span>
+					<span className="flex flex-grow flex-wrap justify-between text-justify">{items.map(renderItem)}</span>
 				</h4>
 			</div>
 		</>

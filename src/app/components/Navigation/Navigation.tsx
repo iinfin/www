@@ -6,10 +6,10 @@ export default function HeaderTitle(): ReactElement {
 		<>
 			<ul>
 				<li>
-					<Link href="/">/</Link>
+					<Link href="/">—</Link>
 				</li>
 				<li>
-					<Link href="/">INFORMATION</Link>
+					<a href="https://linkedin.com/in/u29dc">INFORMATION</a>
 				</li>
 				<li>
 					{/* TODO */}

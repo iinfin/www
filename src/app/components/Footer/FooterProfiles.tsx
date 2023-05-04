@@ -3,7 +3,7 @@ import type { ReactElement } from 'react';
 export default function FooterProfiles(): ReactElement {
 	return (
 		<>
-			<span className="mb-4 w-1/2">PROFILE</span>
+			<span className="mb-4 w-1/2">PROFILES</span>
 			<span className="font-caption-01 flex-grow text-right sm:text-left md:flex-grow-0">
 				<ul>
 					<li>
