@@ -2,21 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-style: normal;
+	font-weight: 700;
+	/* prettier-ignore */
+	src:
+		url('/assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff2') format('woff2'),
+		url('/assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff') format('woff'),
+		url('/assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.otf') format('opentype');
+	font-family: 'PPNeueMontreal';
+	font-display: swap;
+}
+
 html {
-	@apply text-root;
+	@apply m-0 select-none p-0 text-root;
 }
 
 html,
 body {
-	@apply fixed inset-0 m-0 bg-black p-0 text-white;
+	@apply fixed inset-0 bg-white-x2 text-black-x1;
 }
 
 body {
-	@apply font-x1 text-base font-normal leading-tight;
-}
-
-main {
-	@apply absolute inset-0 flex items-center justify-center;
+	@apply p-10 font-sans text-body;
 }
 
 h1,
@@ -26,4 +34,40 @@ h4,
 h5,
 h6 {
 	@apply uppercase;
+}
+
+a:hover {
+	@apply underline;
+}
+
+.font-title {
+	@apply font-sans text-display-title font-medium uppercase;
+}
+
+.font-subtitle {
+	@apply font-sans text-display-subtitle font-medium uppercase;
+}
+
+.font-heading-01 {
+	@apply font-sans text-heading-01 font-medium uppercase;
+}
+
+.font-heading-02 {
+	@apply font-sans text-heading-02 font-medium uppercase;
+}
+
+.font-heading-03 {
+	@apply font-sans text-heading-03 font-medium uppercase;
+}
+
+.font-heading-04 {
+	@apply font-sans text-heading-04 font-medium uppercase;
+}
+
+.font-caption-01 {
+	@apply font-sans text-caption-01 font-medium uppercase;
+}
+
+.font-caption-02 {
+	@apply font-sans text-caption-02 font-medium uppercase;
 }

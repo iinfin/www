@@ -5,7 +5,7 @@ const siteName = 'IINFIN';
 const siteDescription = 'An evolving entity acting as a multifaceted practice, speculating artificial aesthetics across mediums.';
 const siteUrl = 'https://iinf.in';
 
-export const MetadataTemplate: Metadata = {
+const MetadataTemplate: Metadata = {
 	title: {
 		default: `${siteTitle}`,
 		template: `%s | ${siteTitle}`,
@@ -85,3 +85,5 @@ export const MetadataTemplate: Metadata = {
 		},
 	},
 };
+
+export default MetadataTemplate;

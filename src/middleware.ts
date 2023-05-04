@@ -1,7 +1,7 @@
 import type { NextFetchEvent, NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
-export async function middleware(_req: NextRequest, _next: NextFetchEvent) {
+export async function middleware(_req: NextRequest, _fetch: NextFetchEvent) {
 	const mwRequestHeaders = new Headers(_req.headers);
 	const mwResponse = NextResponse.next({ request: { headers: mwRequestHeaders } });
 
