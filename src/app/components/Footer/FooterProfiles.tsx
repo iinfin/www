@@ -7,16 +7,24 @@ export default function FooterProfiles(): ReactElement {
 			<span className="font-caption-01 flex-grow text-right sm:text-left md:flex-grow-0">
 				<ul>
 					<li>
-						<a href="http://linkedin.com/in/u29dc">linkedin</a>
+						<a target="_blank" href="http://linkedin.com/in/u29dc">
+							LINKEDIN
+						</a>
 					</li>
 					<li>
-						<a href="http://twitter.com/u29dc">twitter</a>
+						<a target="_blank" href="http://twitter.com/u29dc">
+							TWITTER
+						</a>
 					</li>
 					<li>
-						<a href="http://instagram.com/u29dc">instagram</a>
+						<a target="_blank" href="http://instagram.com/u29dc">
+							INSTAGRAM
+						</a>
 					</li>
 					<li>
-						<a href="http://vimeo.com/u29dc">vimeo</a>
+						<a target="_blank" href="http://vimeo.com/u29dc">
+							VIMEO
+						</a>
 					</li>
 				</ul>
 			</span>

@@ -53,8 +53,7 @@ module.exports = {
 				tight: 1,
 			},
 			fontWeight: {
-				normal: 500,
-				medium: 700,
+				medium: 500,
 			},
 			letterSpacing: {
 				normal: '-0.02em',
