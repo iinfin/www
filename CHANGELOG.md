@@ -1,11 +1,10 @@
 # [1.3.0](https://github.com/iinfin/www/compare/v1.2.0...v1.3.0) (2023-05-06)
 
-
 ### Features
 
-* **app:** add animations and cleanup ([b90ab1c](https://github.com/iinfin/www/commit/b90ab1cfc0390ea5edf25e7034558089c86e9eac))
-* **app:** add base animation and overall cleanup ([9b84804](https://github.com/iinfin/www/commit/9b848041f457d681bbdf93bff4bc033312dae3f2))
-* **app:** add initial content and structure ([294367d](https://github.com/iinfin/www/commit/294367d40299d6f678e96d18c177cd84c7f94714))
+-   **app:** add animations and cleanup ([b90ab1c](https://github.com/iinfin/www/commit/b90ab1cfc0390ea5edf25e7034558089c86e9eac))
+-   **app:** add base animation and overall cleanup ([9b84804](https://github.com/iinfin/www/commit/9b848041f457d681bbdf93bff4bc033312dae3f2))
+-   **app:** add initial content and structure ([294367d](https://github.com/iinfin/www/commit/294367d40299d6f678e96d18c177cd84c7f94714))
 
 # [1.2.0](https://github.com/iinfin/www/compare/v1.1.3...v1.2.0) (2023-05-01)
 
