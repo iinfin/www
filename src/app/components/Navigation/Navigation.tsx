@@ -6,9 +6,6 @@ export default function HeaderTitle(): ReactElement {
 		<>
 			<ul>
 				<li>
-					<Link href="/">—</Link>
-				</li>
-				<li>
 					<a target="_blank" href="https://linkedin.com/in/u29dc">
 						INFORMATION
 					</a>
@@ -17,6 +14,9 @@ export default function HeaderTitle(): ReactElement {
 					<a target="_blank" href="https://instagram.com/u29dc">
 						WORKS
 					</a>
+				</li>
+				<li>
+					<Link href="/">—</Link>
 				</li>
 			</ul>
 		</>

@@ -3,24 +3,26 @@ import type { ReactElement } from 'react';
 import AnimationWrapper from '@/components/Animation/AnimationWrapper';
 import Navigation from '@/components/Navigation/Navigation';
 
-const listClients = [
+type ListItem = string | { [key: string]: string };
+
+const listClients: ListItem[] = [
 	//
 	'CLIENTS & COLLABORATORS',
 	'',
-	'PORSCHE',
-	'SONAR ISTANBUL',
+	{ PORSCHE: 'https://twitter.com/PorscheGB/status/1618564539074617344' },
+	{ NOHLAB: 'https://nohlab.com/work/cycle' },
 	'',
-	'OUTERNET LONDON',
-	'NOHLAB',
+	{ 'SONAR ISTANBUL': 'https://sonaristanbul.com/' },
+	{ 'OUTERNET LONDON': 'https://outernetglobal.com/' },
+	'',
+	{ 'ARTIFICIAL ROME': 'https://artificialrome.com/case/legacy-of-tomorrow' },
+	{ 'WALLPAPER MAGAZINE': 'https://wallpaper.com/porsche' },
+	'',
+	{ 'SAASFEE PAVILLON': 'https://offgrid.studio/assemblage/' },
 	'NATIONAL TAIWAN MUSEUM OF FINE ARTS',
-	'',
-	'ARTIFICIAL ROME',
-	'WALLPAPER MAGAZINE',
-	'',
-	'SAASFEE PAVILLON',
 ];
 
-const listFocusAreas = [
+const listFocusAreas: ListItem[] = [
 	//
 	'FOCUS AREAS',
 	'',
@@ -33,22 +35,35 @@ const listFocusAreas = [
 ];
 
 export default function ContentAbout(): ReactElement {
-	const getListItemClass = (item: string, index: number, itemsList: string[] = []) => {
-		if (item === '') {
+	const getListItemClass = (item: ListItem, index: number, itemsList: ListItem[] = []) => {
+		if (typeof item === 'string' && item === '') {
 			return 'hidden';
 		}
-		if (index > 0 && itemsList[index - 1] === '') {
+		if (index > 0 && typeof itemsList[index - 1] === 'string' && itemsList[index - 1] === '') {
 			return 'mt-4';
 		}
 		return '';
 	};
 
-	const renderList = (items: string[]) => {
+	const renderListItem = (item: ListItem) => {
+		if (typeof item === 'string') {
+			return item || <br />;
+		}
+		const key = Object.keys(item)[0];
+		const content = item[key ?? ''];
+		return (
+			<a target="_blank" href={content}>
+				{key}
+			</a>
+		);
+	};
+
+	const renderList = (items: ListItem[]) => {
 		return (
 			<ul>
 				{items.map((item, index) => (
 					<li key={index} className={getListItemClass(item, index, items)}>
-						{item || <br />}
+						{renderListItem(item)}
 					</li>
 				))}
 			</ul>
