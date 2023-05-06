@@ -49,26 +49,25 @@ module.exports = {
 				'caption-02': '1rem',
 			},
 			lineHeight: {
-				normal: 1.1,
-				tight: 1,
+				default: 1.1,
 			},
 			fontWeight: {
-				medium: 500,
+				default: 500,
 			},
 			letterSpacing: {
-				normal: '-0.02em',
-				tight: '-0.1em',
+				default: '0',
 			},
 			colors: {
 				transparent: 'transparent',
 				current: 'currentColor',
 				black: {
 					x1: '#000000',
-					x2: '#121212',
+					x2: '#080808',
 				},
 				white: {
 					x1: '#ffffff',
 					x2: '#fafafa',
+					x3: '#f5f5f5',
 				},
 			},
 			aspectRatio: {

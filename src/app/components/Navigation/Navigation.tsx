@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { ReactElement } from 'react';
 
 export default function HeaderTitle(): ReactElement {
@@ -14,9 +13,6 @@ export default function HeaderTitle(): ReactElement {
 					<a target="_blank" href="https://instagram.com/u29dc">
 						WORKS
 					</a>
-				</li>
-				<li>
-					<Link href="/">—</Link>
 				</li>
 			</ul>
 		</>

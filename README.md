@@ -16,8 +16,9 @@
 ├── src                             # Main source of the app
 │   ├── app                         # Using Next.js 13 appDir
 │   │   ├── api                     # APIs
+│   │   ├── components              # Main compnents
 │   │   ├── hooks                   # React hooks
-│   │   ├── services                # Service functions for API calls and other tasks
+│   │   ├── lib                     # Library utils
 │   │   ├── styles                  # Styles folder (including global styles)
 │   │   ├── utils                   # Utility functions
 │   │   └── (pages)                 # Subpages grouped for organization

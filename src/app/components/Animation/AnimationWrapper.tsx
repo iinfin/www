@@ -41,7 +41,7 @@ const wrapChildrenWithMotion = (children: React.ReactNode, stagger: number, isRe
 					exit="hidden"
 					custom={effectiveIndex}
 					variants={itemVariants}
-					transition={{ delay: effectiveIndex * stagger, duration: 0.2 }}
+					transition={{ delay: effectiveIndex * stagger, duration: 0.5 }}
 				>
 					{wrappedChildren}
 				</MotionElement>
@@ -51,7 +51,7 @@ const wrapChildrenWithMotion = (children: React.ReactNode, stagger: number, isRe
 	});
 };
 
-const AnimationWrapper: React.FC<AnimationWrapperProps> = ({ children, stagger = 0.02, isReverse = false }) => {
+const AnimationWrapper: React.FC<AnimationWrapperProps> = ({ children, stagger = 0.05, isReverse = false }) => {
 	const wrappedChildren = wrapChildrenWithMotion(children, stagger, isReverse);
 
 	return <AnimatePresence>{wrappedChildren}</AnimatePresence>;

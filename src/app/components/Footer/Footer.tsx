@@ -7,7 +7,7 @@ import FooterProfiles from './FooterProfiles';
 
 export default function MainFooter(): ReactElement {
 	return (
-		<div className="font-caption-01 bottom-0 col-span-6 grid grid-cols-6 items-end gap-2">
+		<div className="bottom-0 col-span-6 mt-4 grid grid-cols-6 items-end gap-2">
 			<AnimationWrapper>
 				<div className="col-span-6 col-start-1 flex h-full flex-row justify-between md:col-span-1 md:col-start-4 md:flex-col">
 					<FooterProfiles />
