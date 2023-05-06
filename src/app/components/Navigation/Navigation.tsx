@@ -12,7 +12,6 @@ export default function HeaderTitle(): ReactElement {
 					<a href="https://linkedin.com/in/u29dc">INFORMATION</a>
 				</li>
 				<li>
-					{/* TODO */}
 					<a href="https://instagram.com/u29dc">WORKS</a>
 				</li>
 			</ul>

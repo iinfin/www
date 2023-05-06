@@ -47,8 +47,8 @@ export default function ContentAbout(): ReactElement {
 		return (
 			<ul>
 				{items.map((item, index) => (
-					<li key={index} className={getListItemClass(item, index)}>
-						{item}
+					<li key={index} className={getListItemClass(item, index, items)}>
+						{item || <br />}
 					</li>
 				))}
 			</ul>
@@ -56,7 +56,7 @@ export default function ContentAbout(): ReactElement {
 	};
 
 	return (
-		<div className="font-caption-01 top-0 col-span-6 grid aspect-auto grid-cols-6 gap-2 gap-y-20 sm:aspect-square md:aspect-wide-half lg:aspect-wide-full">
+		<div className="font-caption-01 top-0 col-span-6 mb-40 mt-40 grid aspect-auto grid-cols-6 gap-2 gap-y-20 sm:aspect-square md:aspect-wide-half lg:mb-10 lg:mt-10 lg:aspect-wide-full">
 			<AnimationWrapper>
 				<div className="col-span-1 row-start-1 hidden md:block">
 					TECHNICAL ARTIST &<br />
@@ -70,7 +70,9 @@ export default function ContentAbout(): ReactElement {
 				<div className="col-span-6 col-start-1 row-start-4 md:col-span-1 md:col-start-4 md:row-start-2">{renderList(listFocusAreas)}</div>
 
 				<div className="col-span-1 col-start-6 row-start-1 hidden md:block xl:col-start-5">
-					<span>han@iinf.in</span>
+					<span>
+						<a href="mailto:han@iinf.in">han@iinf.in</a>
+					</span>
 				</div>
 				<div className="col-span-1 col-start-6 row-start-2 hidden md:block xl:col-start-5">
 					<Navigation />
