@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/iinfin/www/compare/v1.3.0...v1.4.0) (2023-05-06)
+
+
+### Features
+
+* **app:** add client and src links ([34cbf02](https://github.com/iinfin/www/commit/34cbf02341b7d578de2fce5c3ee6574a1cc36b31))
+* **app:** add client links ([34a490b](https://github.com/iinfin/www/commit/34a490bcd9e9fb09fe222077e518e16fc70952c1))
+* **app:** add src link ([d70f637](https://github.com/iinfin/www/commit/d70f6379166410899989fa8f338907c2f78f4964))
+
 # [1.3.0](https://github.com/iinfin/www/compare/v1.2.0...v1.3.0) (2023-05-06)
 
 ### Features
