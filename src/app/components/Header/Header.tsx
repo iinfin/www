@@ -10,7 +10,11 @@ export default function MainHeader(): ReactElement {
 	return (
 		<div className="font-caption-01 top-0 col-span-6 grid grid-cols-6 gap-2">
 			<AnimationWrapper>
-				<div className="col-span-3 col-start-4 row-start-1 md:col-span-1 md:col-start-1"></div>
+				<div className="col-span-3 col-start-4 row-start-1 md:col-span-1 md:col-start-1">
+					<a target="_blank" href="https://github.com/u29dc/www">
+						/src
+					</a>
+				</div>
 				<div className="col-span-3 col-start-1 row-start-1 md:col-span-1 md:col-start-3">
 					<HeaderNavigation />
 				</div>
