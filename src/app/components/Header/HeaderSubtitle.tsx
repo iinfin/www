@@ -6,14 +6,12 @@ export default function HeaderSubtitle(): ReactElement {
 		'ENTITY',
 		'ACTING AS',
 		'A MULTIFACETED',
-		'',
 		'PRACTICE —',
+		'',
 		'SPECULATING',
 		'→',
-		'',
 		'ARTIFICIAL AESTHETICS',
-		'ACROSS',
-		'MEDIUMS',
+		'ACROSS MEDIUMS',
 	];
 
 	const renderItem = (item: string, index: number) => {
