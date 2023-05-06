@@ -15,16 +15,26 @@
 }
 
 html {
-	@apply m-0 select-none p-0 text-root;
+	@apply m-0 p-0;
+	@apply select-none text-root;
 }
 
 html,
 body {
-	@apply fixed inset-0 bg-white-x2 text-black-x1;
+	@apply fixed inset-0;
+	@apply bg-white-x2 text-black-x1;
+}
+
+@media (prefers-color-scheme: dark) {
+	html,
+	body {
+		@apply bg-black-x2 text-white-x3;
+	}
 }
 
 body {
-	@apply p-10 font-sans text-body;
+	@apply p-10;
+	@apply font-caption-01 antialiased; /* default font */
 }
 
 h1,
@@ -32,42 +42,55 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	@apply uppercase;
+h6,
+a,
+p {
+	@apply leading-default;
 }
 
 a:hover {
-	@apply underline;
+	@apply underline opacity-50;
 }
 
 .font-title {
-	@apply font-sans text-display-title font-medium uppercase;
+	@apply font-sans text-display-title;
 }
 
 .font-subtitle {
-	@apply font-sans text-display-subtitle font-medium uppercase;
+	@apply font-sans text-display-subtitle;
 }
 
 .font-heading-01 {
-	@apply font-sans text-heading-01 font-medium uppercase;
+	@apply font-sans text-heading-01;
 }
 
 .font-heading-02 {
-	@apply font-sans text-heading-02 font-medium uppercase;
+	@apply font-sans text-heading-02;
 }
 
 .font-heading-03 {
-	@apply font-sans text-heading-03 font-medium uppercase;
+	@apply font-sans text-heading-03;
 }
 
 .font-heading-04 {
-	@apply font-sans text-heading-04 font-medium uppercase;
+	@apply font-sans text-heading-04;
 }
 
 .font-caption-01 {
-	@apply font-sans text-caption-01 font-medium uppercase;
+	@apply font-sans text-caption-01;
 }
 
 .font-caption-02 {
-	@apply font-sans text-caption-02 font-medium uppercase;
+	@apply font-sans text-caption-02;
+}
+
+.font-title,
+.font-subtitle,
+.font-heading-01,
+.font-heading-02,
+.font-heading-03,
+.font-heading-04,
+.font-caption-01,
+.font-caption-02 {
+	@apply font-default uppercase tracking-default;
 }

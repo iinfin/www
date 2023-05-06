@@ -4,7 +4,7 @@ export default function FooterProfiles(): ReactElement {
 	return (
 		<>
 			<span className="mb-4 w-1/2">PROFILES</span>
-			<span className="font-caption-01 flex-grow text-right sm:text-left md:flex-grow-0">
+			<span className="flex-grow text-right sm:text-left md:flex-grow-0">
 				<ul>
 					<li>
 						<a target="_blank" href="http://linkedin.com/in/u29dc">
