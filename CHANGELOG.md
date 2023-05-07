@@ -1,9 +1,8 @@
 ## [1.4.1](https://github.com/iinfin/www/compare/v1.4.0...v1.4.1) (2023-05-07)
 
-
 ### Bug Fixes
 
-* **github:** release workflow ([c5e2a63](https://github.com/iinfin/www/commit/c5e2a63e6f936cb72ac75e15530221a095271e1c))
+-   **github:** release workflow ([c5e2a63](https://github.com/iinfin/www/commit/c5e2a63e6f936cb72ac75e15530221a095271e1c))
 
 # [1.4.0](https://github.com/iinfin/www/compare/v1.3.0...v1.4.0) (2023-05-06)
 
