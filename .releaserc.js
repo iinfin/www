@@ -1,3 +1,18 @@
+const config = {
+	build: { section: 'Build System', release: 'patch' },
+	chore: { section: 'Chores' },
+	ci: { section: 'Continuous Integration' },
+	docs: { section: 'Documentation' },
+	feat: { section: 'Features', release: 'minor' },
+	fix: { section: 'Bug Fixes', release: 'patch' },
+	perf: { section: 'Performance Improvements' },
+	refactor: { section: 'Code Refactoring', release: 'patch' },
+	revert: { section: 'Reverts' },
+	style: { section: 'Styles', release: 'patch' },
+	test: { section: 'Tests', release: 'patch' },
+	tweaks: { section: 'Tweaks', release: 'patch' },
+};
+
 module.exports = {
 	branches: ['main'],
 	plugins: [
@@ -5,30 +20,14 @@ module.exports = {
 			'@semantic-release/commit-analyzer',
 			{
 				preset: 'angular',
-				releaseRules: [
-					{ type: 'feat', release: 'minor' },
-					{ type: 'fix', release: 'patch' },
-					{ type: 'build', release: 'patch' },
-					{ type: 'tweaks', release: 'patch' },
-					{ type: 'refactor', release: 'patch' },
-					{ type: 'style', release: 'patch' },
-					{ type: 'test', release: 'patch' },
-				],
+				releaseRules: Object.entries(config)
+					.map(([type, { release }]) => ({ type, release }))
+					.filter((rule) => rule.release),
 			},
 		],
 		[
 			'@semantic-release/release-notes-generator',
-			{
-				writerOpts: {
-					types: [
-						{ type: 'build', section: 'Build', hidden: false },
-						{ type: 'tweaks', section: 'Tweaks', hidden: false },
-						{ type: 'refactor', section: 'Refactor', hidden: false },
-						{ type: 'style', section: 'Style', hidden: false },
-						{ type: 'test', section: 'Tests', hidden: false },
-					],
-				},
-			},
+			{ writerOpts: { types: Object.entries(config).map(([type, { section }]) => ({ type, section, hidden: false })) } },
 		],
 		'@semantic-release/changelog',
 		[
