@@ -43,9 +43,8 @@ h3,
 h4,
 h5,
 h6,
-a,
 p {
-	@apply leading-default;
+	@apply leading-none;
 }
 
 a:hover {

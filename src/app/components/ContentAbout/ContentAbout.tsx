@@ -88,7 +88,10 @@ export default function ContentAbout(): ReactElement {
 				</div>
 
 				<div className="col-span-6 col-start-1 row-start-3 md:col-span-1 md:col-start-3 md:row-start-2">02</div>
-				<div className="col-span-6 col-start-1 row-start-4 md:col-span-1 md:col-start-4 md:row-start-2">{renderList(listFocusAreas)}</div>
+				<div className="col-span-6 col-start-1 row-start-4 flex flex-col justify-between md:col-span-1 md:col-start-4 md:row-start-2">
+					{renderList(listFocusAreas)}
+					<span>/</span>
+				</div>
 				<div className="col-span-1 col-start-6 row-start-2 hidden md:block xl:col-start-5">
 					<Navigation />
 				</div>

@@ -48,9 +48,6 @@ module.exports = {
 				'caption-01': '1.1rem',
 				'caption-02': '1rem',
 			},
-			lineHeight: {
-				default: 1.1,
-			},
 			fontWeight: {
 				default: 500,
 			},

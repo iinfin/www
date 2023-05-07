@@ -12,7 +12,7 @@ export default function MainFooter(): ReactElement {
 				<div className="col-span-6 col-start-1 flex h-full flex-row justify-between md:col-span-1 md:col-start-4 md:flex-col">
 					<FooterProfiles />
 				</div>
-				<div className="col-span-6 col-start-1 flex h-full flex-row justify-between md:col-span-1 md:col-start-5 md:flex-col">
+				<div className="col-span-6 col-start-1 flex h-full flex-row justify-between md:col-span-1 md:col-start-5 md:flex-row">
 					<FooterContact />
 				</div>
 			</AnimationWrapper>
