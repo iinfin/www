@@ -1,9 +1,8 @@
 # [1.5.0](https://github.com/iinfin/www/compare/v1.4.2...v1.5.0) (2023-05-23)
 
-
 ### Features
 
-* **app:** refactor & cleanup ([1fdef17](https://github.com/iinfin/www/commit/1fdef1789e7c32ced7820d7472200cf6910d3063))
+-   **app:** refactor & cleanup ([1fdef17](https://github.com/iinfin/www/commit/1fdef1789e7c32ced7820d7472200cf6910d3063))
 
 ## [1.4.2](https://github.com/iinfin/www/compare/v1.4.1...v1.4.2) (2023-05-22)
 
