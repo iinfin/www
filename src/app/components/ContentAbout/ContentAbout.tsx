@@ -12,14 +12,14 @@ const listClients: ListItem[] = [
 	{ PORSCHE: 'https://twitter.com/PorscheGB/status/1618564539074617344' },
 	{ NOHLAB: 'https://nohlab.com/work/cycle' },
 	'',
-	{ 'SONAR ISTANBUL': 'https://sonaristanbul.com/' },
-	{ 'OUTERNET LONDON': 'https://outernetglobal.com/' },
+	{ SONAR_ISTANBUL: 'https://sonaristanbul.com/' },
+	{ OUTERNET_LONDON: 'https://outernetglobal.com/' },
 	'',
-	{ 'ARTIFICIAL ROME': 'https://artificialrome.com/case/legacy-of-tomorrow' },
-	{ 'WALLPAPER MAGAZINE': 'https://wallpaper.com/porsche' },
+	{ ARTIFICIAL_ROME: 'https://artificialrome.com/case/legacy-of-tomorrow' },
+	{ WALLPAPER_MAGAZINE: 'https://wallpaper.com/porsche' },
 	'',
-	{ 'SAASFEE PAVILLON': 'https://offgrid.studio/assemblage/' },
-	'NATIONAL TAIWAN MUSEUM OF FINE ARTS',
+	{ SAASFEE_PAVILLON: 'https://offgrid.studio/assemblage/' },
+	{ NATIONAL_TAIWAN_MUSEUM_OF_FINE_ARTS: 'https://csismn.com/patterns-of-possibility-v2' },
 ];
 
 const listFocusAreas: ListItem[] = [
@@ -71,7 +71,7 @@ export default function ContentAbout(): ReactElement {
 	};
 
 	return (
-		<div className="top-0 col-span-6  mb-40 mt-40 grid aspect-auto grid-cols-6 gap-2   sm:aspect-square md:aspect-wide-half lg:mb-10 lg:mt-10 lg:aspect-wide-full">
+		<div className="col-span-6 grid aspect-auto grid-cols-6 gap-2 sm:aspect-square md:aspect-wide-half lg:aspect-wide-full">
 			<AnimationWrapper>
 				<div className="col-span-1 row-start-1 hidden md:block">
 					TECHNICAL ARTIST &<br />

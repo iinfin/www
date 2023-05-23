@@ -51,10 +51,8 @@ const wrapChildrenWithMotion = (children: React.ReactNode, stagger: number, isRe
 	});
 };
 
-const AnimationWrapper: React.FC<AnimationWrapperProps> = ({ children, stagger = 0.1, isReverse = false }) => {
+export default function AnimationWrapper({ children, stagger = 0.1, isReverse = false }: AnimationWrapperProps) {
 	const wrappedChildren = wrapChildrenWithMotion(children, stagger, isReverse);
 
 	return <AnimatePresence>{wrappedChildren}</AnimatePresence>;
-};
-
-export default AnimationWrapper;
+}

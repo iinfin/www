@@ -8,7 +8,7 @@ import HeaderTitle from './HeaderTitle';
 
 export default function MainHeader(): ReactElement {
 	return (
-		<div className="top-0 col-span-6 mb-4 grid grid-cols-6 gap-2">
+		<div className="top-0 col-span-6 mb-20 grid grid-cols-6 gap-2">
 			<AnimationWrapper>
 				<div className="col-span-3 col-start-4 row-start-1 md:col-span-1 md:col-start-1">
 					<a target="_blank" href="https://github.com/u29dc/www">

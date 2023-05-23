@@ -5,13 +5,13 @@ export default function HeaderTitle(): ReactElement {
 		<>
 			<ul>
 				<li>
-					<a target="_blank" href="https://linkedin.com/in/u29dc">
+					<a target="_blank" href="https://u29dc.co/info">
 						INFORMATION
 					</a>
 				</li>
 				<li>
-					<a target="_blank" href="https://instagram.com/u29dc">
-						WORKS
+					<a target="_blank" href="https://u29dc.co/reel">
+						REEL
 					</a>
 				</li>
 			</ul>
