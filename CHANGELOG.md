@@ -1,10 +1,9 @@
 ## [1.5.1](https://github.com/iinfin/www/compare/v1.5.0...v1.5.1) (2023-05-29)
 
-
 ### Bug Fixes
 
-* **app:** profile links ([ca3e4fe](https://github.com/iinfin/www/commit/ca3e4fec3a5ec4ea913ff56987e15391d7c56c1c))
-* **github:** readme structure ([f3141a2](https://github.com/iinfin/www/commit/f3141a20aab86d969f769afdba7c49f326133ade))
+-   **app:** profile links ([ca3e4fe](https://github.com/iinfin/www/commit/ca3e4fec3a5ec4ea913ff56987e15391d7c56c1c))
+-   **github:** readme structure ([f3141a2](https://github.com/iinfin/www/commit/f3141a20aab86d969f769afdba7c49f326133ade))
 
 # [1.5.0](https://github.com/iinfin/www/compare/v1.4.2...v1.5.0) (2023-05-23)
 
