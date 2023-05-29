@@ -19,7 +19,7 @@
 │   │   ├── components              # Main compnents
 │   │   ├── hooks                   # React hooks
 │   │   ├── lib                     # Library utils
-│   │   ├── styles                  # Styles folder (including global styles)
+│   │   ├── styles                  # Global styles
 │   │   ├── utils                   # Utility functions
 │   │   └── (pages)                 # Subpages grouped for organization
 │   └── middleware.ts               # Middleware for Next.js
