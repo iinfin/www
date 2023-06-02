@@ -1,10 +1,9 @@
 # [1.6.0](https://github.com/u29dc/www/compare/v1.5.1...v1.6.0) (2023-06-02)
 
-
 ### Features
 
-* **app:** add cms and refactor components ([8a9410b](https://github.com/u29dc/www/commit/8a9410b91a9c16f78a41e3f74cfa9239b04b25b9))
-* **app:** add cms base ([c551690](https://github.com/u29dc/www/commit/c551690ad4a47f0087cfa0f6abc7d6573e49f81f))
+-   **app:** add cms and refactor components ([8a9410b](https://github.com/u29dc/www/commit/8a9410b91a9c16f78a41e3f74cfa9239b04b25b9))
+-   **app:** add cms base ([c551690](https://github.com/u29dc/www/commit/c551690ad4a47f0087cfa0f6abc7d6573e49f81f))
 
 ## [1.5.1](https://github.com/iinfin/www/compare/v1.5.0...v1.5.1) (2023-05-29)
 
