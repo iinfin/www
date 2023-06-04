@@ -6,7 +6,7 @@ export type ListItem = ListItemString | ListItemLink;
 
 const isListItemString = (item: ListItem): item is ListItemString => typeof item === 'string';
 
-const getListItemClass = (item: ListItem, index: number, itemsList: ListItem[] = []) => {
+const getListItemClass = (index: number, itemsList: ListItem[] = []) => {
 	const prevItem = itemsList[index - 1];
 	if (prevItem && isListItemString(prevItem) && prevItem === '') {
 		return 'mt-4';
@@ -35,7 +35,7 @@ export const renderList = (items: ListItem[] = []): ReactElement => (
 		{items.map((item, index) => {
 			const key = isListItemString(item) ? index : (item as ListItemLink).id;
 			return (
-				<li key={key} className={getListItemClass(item, index, items)}>
+				<li key={key} className={getListItemClass(index, items)}>
 					{renderListItem(item)}
 				</li>
 			);
