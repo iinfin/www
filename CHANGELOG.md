@@ -1,3 +1,22 @@
+# [1.7.0](https://github.com/u29dc/www/compare/v1.6.0...v1.7.0) (2023-06-04)
+
+
+### Bug Fixes
+
+* **app:** csp headers for vimeo ([8162f9d](https://github.com/u29dc/www/commit/8162f9d54f842220d032b0e9b0c31fd1bcf5b517))
+* **app:** csp headers for vimeo ([f256a8a](https://github.com/u29dc/www/commit/f256a8afacffb4a287ed66eb1c08fe7b485a7162))
+* **app:** csp headers nonce ([97b4279](https://github.com/u29dc/www/commit/97b42794b6a40916e2f9d827c6ad75247ec809a8))
+* **app:** csp headers nonce ([3df1771](https://github.com/u29dc/www/commit/3df17710ecde433683b3299f67a9cef2572b3a9b))
+* **app:** eslint no-unused-vars ([3bcb5fe](https://github.com/u29dc/www/commit/3bcb5fefe87def20b271b2e3dea09330971ca0e5))
+* **app:** video hover states and hydration ([e34079c](https://github.com/u29dc/www/commit/e34079c9581b8cf63d35cd4467bb9539f42b547f))
+
+
+### Features
+
+* **app:** add middleware nonce ([9efda87](https://github.com/u29dc/www/commit/9efda87cc51638c9061155f44dfda945d996eb06))
+* **app:** add reel background ([de77ba8](https://github.com/u29dc/www/commit/de77ba806fa61f16124c7b6e35e225387c309ca2))
+* **app:** add reel background and csp base ([f45432b](https://github.com/u29dc/www/commit/f45432be77aaf3320ff145096e324d1c90617cb4))
+
 # [1.6.0](https://github.com/u29dc/www/compare/v1.5.1...v1.6.0) (2023-06-02)
 
 ### Features
