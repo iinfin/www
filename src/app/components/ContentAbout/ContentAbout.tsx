@@ -48,7 +48,13 @@ export default function ContentAbout(): ReactElement {
 			onMouseLeave={handleMouseLeave}
 		>
 			<div className="-z-10 col-span-6 col-start-1 row-span-2 row-start-1">
-				<ContentAboutVideo isActive={showVideo} />
+				<div
+					className={`relative h-full w-full overflow-hidden transition-opacity duration-200 ease-in-out ${
+						showVideo ? 'opacity-100' : 'opacity-0'
+					}`}
+				>
+					<ContentAboutVideo />
+				</div>
 			</div>
 
 			<div className="col-span-1 col-start-1 row-start-1 hidden md:block">

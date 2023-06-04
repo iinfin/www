@@ -32,13 +32,10 @@ const renderListItem = (item: ListItem): ReactElement => {
 
 export const renderList = (items: ListItem[] = []): ReactElement => (
 	<ul>
-		{items.map((item, index) => {
-			const key = isListItemString(item) ? index : (item as ListItemLink).id;
-			return (
-				<li key={key} className={getListItemClass(index, items)}>
-					{renderListItem(item)}
-				</li>
-			);
-		})}
+		{items.map((item, index) => (
+			<li key={index} className={getListItemClass(index, items)}>
+				{renderListItem(item)}
+			</li>
+		))}
 	</ul>
 );
