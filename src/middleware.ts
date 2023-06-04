@@ -16,8 +16,22 @@ export function generateCsp() {
 		{ name: 'manifest-src', values: ["'self'"] },
 		{ name: 'media-src', values: ["'self'", 'i.vimeocdn.com', 'f.vimeocdn.com'] },
 		{ name: 'object-src', values: ["'none'"] },
-		{ name: 'script-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`, "'strict-dynamic'", 'cdn.jsdelivr.net', 'player.vimeo.com'] },
-		{ name: 'style-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`, 'cdn.jsdelivr.net'] },
+		{
+			name: 'script-src',
+			values: [
+				"'report-sample'",
+				"'self'",
+				"'unsafe-inline'",
+				`'nonce-${nonce}'`,
+				/* "'strict-dynamic'", */
+				'cdn.jsdelivr.net',
+				'player.vimeo.com',
+			],
+		},
+		{
+			name: 'style-src',
+			values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`, 'cdn.jsdelivr.net'],
+		},
 	];
 
 	const csp = cspObj
