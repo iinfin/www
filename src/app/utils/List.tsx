@@ -1,38 +1,41 @@
 import type { ReactElement } from 'react';
 
-export type ListItem = string | { [key: string]: string };
+type ListItemString = string;
+type ListItemLink = { [key: string]: string };
+export type ListItem = ListItemString | ListItemLink;
 
-const getListItemClass = (item: ListItem, index: number, itemsList: ListItem[] = []) => {
-	if (typeof item === 'string' && item === '') {
-		return 'hidden';
-	}
-	if (index > 0 && typeof itemsList[index - 1] === 'string' && itemsList[index - 1] === '') {
+const isListItemString = (item: ListItem): item is ListItemString => typeof item === 'string';
+
+const getListItemClass = (index: number, itemsList: ListItem[] = []) => {
+	const prevItem = itemsList[index - 1];
+	if (prevItem && isListItemString(prevItem) && prevItem === '') {
 		return 'mt-4';
 	}
 	return '';
 };
 
 const renderListItem = (item: ListItem): ReactElement => {
-	if (typeof item === 'string') {
+	if (isListItemString(item)) {
 		return <>{item || <br />}</>;
 	}
+
 	const key = Object.keys(item)[0];
-	const content = item[key ?? ''];
-	return (
-		<a target="_blank" href={content}>
+	const content = (item as ListItemLink)[key ?? ''];
+	return key ? (
+		<a target="_blank" rel="noopener noreferrer" href={content}>
 			{key}
 		</a>
+	) : (
+		<></>
 	);
 };
 
-export const renderList = (items: ListItem[]): ReactElement => {
-	return (
-		<ul>
-			{items.map((item, index) => (
-				<li key={index} className={getListItemClass(item, index, items)}>
-					{renderListItem(item)}
-				</li>
-			))}
-		</ul>
-	);
-};
+export const renderList = (items: ListItem[] = []): ReactElement => (
+	<ul>
+		{items.map((item, index) => (
+			<li key={index} className={getListItemClass(index, items)}>
+				{renderListItem(item)}
+			</li>
+		))}
+	</ul>
+);
