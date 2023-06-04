@@ -22,15 +22,21 @@ export function generateCsp() {
 				"'report-sample'",
 				"'self'",
 				"'unsafe-inline'",
-				`'nonce-${nonce}'`,
-				/* "'strict-dynamic'", */
+				// `'nonce-${nonce}'`,
+				// "'strict-dynamic'",
 				'cdn.jsdelivr.net',
 				'player.vimeo.com',
 			],
 		},
 		{
 			name: 'style-src',
-			values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`, 'cdn.jsdelivr.net'],
+			values: [
+				"'report-sample'",
+				"'self'",
+				"'unsafe-inline'",
+				// `'nonce-${nonce}'`,
+				'cdn.jsdelivr.net',
+			],
 		},
 	];
 
