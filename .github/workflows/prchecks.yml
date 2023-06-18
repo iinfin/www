@@ -1,4 +1,4 @@
-name: PR Checks
+name: 'ci(github): pr checks'
 on:
   pull_request:
     branches:
@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18]
-    name: Build
+    name: 'ci(github): pr checks - build'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -28,7 +28,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18]
-    name: Run all tests
+    name: 'ci(github): pr checks - test'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

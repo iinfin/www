@@ -1,4 +1,4 @@
-name: PR Labels
+name: 'ci(github): pr labels'
 on:
   pull_request:
     types:
@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18]
-    name: Label
+    name: 'ci(github): pr labels'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
