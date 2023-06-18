@@ -1,3 +1,5 @@
+## [1.7.2](https://github.com/u29dc/www/compare/v1.7.1...v1.7.2) (2023-06-18)
+
 ## [1.7.1](https://github.com/u29dc/www/compare/v1.7.0...v1.7.1) (2023-06-17)
 
 # [1.7.0](https://github.com/u29dc/www/compare/v1.6.0...v1.7.0) (2023-06-04)
