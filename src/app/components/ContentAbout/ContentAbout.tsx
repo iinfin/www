@@ -1,7 +1,4 @@
-'use client';
-
 import type { ReactElement } from 'react';
-import { useState } from 'react';
 
 import Navigation from '@/components/Navigation/Navigation';
 import type { ListItem } from '@/utils/List';
@@ -37,22 +34,10 @@ const listFocusAreas: ListItem[] = [
 ];
 
 export default function ContentAbout(): ReactElement {
-	const [showVideo, setShowVideo] = useState(false);
-	const handleMouseEnter = () => setShowVideo(true);
-	const handleMouseLeave = () => setShowVideo(false);
-
 	return (
-		<div
-			className="col-span-6 grid aspect-auto grid-cols-6 gap-2 sm:aspect-square md:aspect-wide-half lg:aspect-wide-full"
-			onMouseEnter={handleMouseEnter}
-			onMouseLeave={handleMouseLeave}
-		>
+		<div className="col-span-6 grid aspect-auto grid-cols-6 gap-2 sm:aspect-square md:aspect-wide-half lg:aspect-wide-full">
 			<div className="-z-10 col-span-6 col-start-1 row-span-2 row-start-1">
-				<div
-					className={`relative h-full w-full overflow-hidden transition-opacity duration-200 ease-in-out ${
-						showVideo ? 'opacity-100' : 'opacity-0'
-					}`}
-				>
+				<div className={'relative h-full w-full overflow-hidden transition-opacity duration-200 ease-in-out'}>
 					<ContentAboutVideo />
 				</div>
 			</div>
