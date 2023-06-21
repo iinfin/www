@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/u29dc/www/compare/v1.7.2...v1.8.0) (2023-06-21)
+
+
+### Features
+
+* **app:** autoplay and show video ([46028f9](https://github.com/u29dc/www/commit/46028f9d0c00e6d8fe74dbaa3bee2f2258d6fc61))
+* **app:** autoplay and show video ([32c6351](https://github.com/u29dc/www/commit/32c635100a79d60ca10cddd80cd45871e041e04c))
+
 ## [1.7.2](https://github.com/u29dc/www/compare/v1.7.1...v1.7.2) (2023-06-18)
 
 ## [1.7.1](https://github.com/u29dc/www/compare/v1.7.0...v1.7.1) (2023-06-17)
