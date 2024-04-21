@@ -23,7 +23,7 @@ export default async function Works(): Promise<ReactElement> {
 					works.map((work: Work) => (
 						<div key={work.id} className="work col-span-6 mb-20 grid grid-cols-6">
 							<div className="col-span-6 col-start-1 row-start-1 mb-5 md:col-span-4 md:col-start-3 lg:col-span-3 lg:col-start-4">
-								{work.videoCover ? <VideoElement vimeoURL={work.videoCover} confidential={work.confidential} /> : <></>}
+								{work.videoCover ? <VideoElement videoUrl={work.videoCover} confidential={work.confidential} /> : <></>}
 							</div>
 							<div className="col-span-6 row-start-2 md:col-span-1 md:col-start-1 md:row-start-3 lg:col-span-1 lg:col-start-3">
 								{work.roles ? (

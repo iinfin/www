@@ -1,28 +1,28 @@
 'use client';
 
 import type { ReactElement } from 'react';
-import { useEffect, useState } from 'react';
-import ReactPlayer from 'react-player';
+// import { useEffect, useState } from 'react';
+// import ReactPlayer from 'react-player';
 
 interface VideoElementProps {
-	vimeoURL: string;
+	videoUrl: string;
 	confidential?: boolean;
 }
 
-export default function VideoElement({ vimeoURL, confidential }: VideoElementProps): ReactElement {
-	const [isLoaded, setIsLoaded] = useState(false);
+export default function VideoElement({ videoUrl, confidential }: VideoElementProps): ReactElement {
+	// const [isLoaded, setIsLoaded] = useState(false);
 
-	useEffect(() => {
-		setIsLoaded(true);
-	}, []);
+	// useEffect(() => {
+	// 	setIsLoaded(true);
+	// }, []);
 
 	return (
 		<div className="video-container relative aspect-wide-full">
 			<div className="absolute left-0 top-0 z-0 h-full w-full bg-black-x1 opacity-80 dark:bg-white-x1 dark:opacity-10"></div>
 			<div className="relative h-full w-full overflow-hidden">
-				{isLoaded ? (
+				{/* {isLoaded ? (
 					<ReactPlayer
-						url={vimeoURL}
+						url={videoUrl}
 						controls={true}
 						loop
 						muted
@@ -47,7 +47,23 @@ export default function VideoElement({ vimeoURL, confidential }: VideoElementPro
 					/>
 				) : (
 					<></>
-				)}
+				)} */}
+				<video
+					src={videoUrl}
+					style={{
+						position: 'absolute',
+						top: '50%',
+						left: '50%',
+						transform: 'translate(-50%, -50%) scale(1)',
+						width: '100%',
+						height: '100%',
+					}}
+					autoPlay
+					loop
+					muted
+					playsInline
+					className="h-full w-full object-cover"
+				></video>
 			</div>
 			{confidential ? (
 				<div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-full">

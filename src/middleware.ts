@@ -5,18 +5,56 @@ export function generateCsp() {
 	const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
 	const cspObj = [
 		{ name: 'base-uri', values: ["'self'"] },
-		{ name: 'connect-src', values: ["'self'", '*.vercel-insights.com', 'player.vimeo.com', 'vimeo.com'] },
+		{
+			name: 'connect-src',
+			values: [
+				"'self'",
+				'*.vercel-insights.com',
+				// 'player.vimeo.com',
+				// 'vimeo.com'
+			],
+		},
 		{ name: 'default-src', values: ["'self'"] },
+		{ name: 'object-src', values: ["'none'"] },
 		{ name: 'font-src', values: ["'self'"] },
 		{ name: 'form-action', values: ["'self'"] },
 		{ name: 'frame-ancestors', values: ["'none'"] },
-		{ name: 'frame-src', values: ["'self'", 'player.vimeo.com'] },
-		{ name: 'img-src', values: ["'self'", 'data:', 'i.vimeocdn.com', 'i.imgur.com'] },
+		{
+			name: 'frame-src',
+			values: [
+				"'self'",
+				// 'player.vimeo.com',
+			],
+		},
+		{
+			name: 'img-src',
+			values: [
+				"'self'",
+				'data:',
+				// 'i.vimeocdn.com',
+			],
+		},
 		{ name: 'manifest-src', values: ["'self'"] },
-		{ name: 'media-src', values: ["'self'", 'i.vimeocdn.com', 'f.vimeocdn.com'] },
-		{ name: 'object-src', values: ["'none'"] },
+		{
+			name: 'media-src',
+			values: [
+				"'self'",
+				// 'i.vimeocdn.com',
+				// 'f.vimeocdn.com',
+				'cdn.u29dc.com',
+			],
+		},
 		{ name: 'style-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`] },
-		{ name: 'script-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`, "'strict-dynamic'", 'player.vimeo.com'] },
+		{
+			name: 'script-src',
+			values: [
+				"'report-sample'",
+				"'self'",
+				`'nonce-${nonce}'`,
+				"'strict-dynamic'",
+				// 'player.vimeo.com'
+			],
+		},
 	];
 
 	const cspHeader = cspObj
