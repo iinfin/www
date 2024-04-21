@@ -1,0 +1,21 @@
+{
+	"files.exclude": {},
+	"search.exclude": {
+		"**/public/*": true,
+		"**/.next/*": true
+	},
+	"search.quickOpen.includeHistory": false,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.addMissingImports": "explicit",
+		"source.fixAll.eslint": "explicit"
+	},
+	"[html][javascript][javascriptreact][typescript][typescriptreact][css][less][sass][scss][json][jsonc]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.ignorePath": ".gitignore",
+	"typescript.tsdk": "node_modules\\.pnpm\\typescript@5.0.2\\node_modules\\typescript\\lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true
+}

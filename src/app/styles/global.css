@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: 500;
+	/* prettier-ignore */
+	src:
+		url('/assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff2') format('woff2'),
+		url('/assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff') format('woff'),
+		url('/assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.otf') format('opentype');
+	font-family: 'PPNeueMontreal';
+	font-display: swap;
+}
+
+html {
+	@apply m-0 p-0;
+	@apply select-none text-root;
+}
+
+html,
+body {
+	@apply fixed inset-0;
+	@apply bg-white-x1 text-black-x1;
+}
+
+@media (prefers-color-scheme: dark) {
+	html,
+	body {
+		@apply bg-black-x1 text-white-x3;
+	}
+}
+
+body {
+	@apply p-10;
+	@apply font-caption-01 antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	@apply leading-none;
+}
+
+a:hover {
+	@apply underline opacity-50;
+}
+
+.font-title {
+	@apply font-sans text-display-title;
+}
+
+.font-subtitle {
+	@apply font-sans text-display-subtitle;
+}
+
+.font-heading-01 {
+	@apply font-sans text-heading-01;
+}
+
+.font-heading-02 {
+	@apply font-sans text-heading-02;
+}
+
+.font-heading-03 {
+	@apply font-sans text-heading-03;
+}
+
+.font-heading-04 {
+	@apply font-sans text-heading-04;
+}
+
+.font-caption-01 {
+	@apply font-sans text-caption-01;
+}
+
+.font-caption-02 {
+	@apply font-sans text-caption-02;
+}
+
+.font-title,
+.font-subtitle,
+.font-heading-01,
+.font-heading-02,
+.font-heading-03,
+.font-heading-04,
+.font-caption-01,
+.font-caption-02 {
+	@apply font-default uppercase tracking-default;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.1;
+	animation: animateGrain 10s steps(10) infinite;
+	background-image: url('/assets/images/noise.png');
+	width: 300%;
+	height: 300%;
+	pointer-events: none;
+}
+
+@keyframes animateGrain {
+	0% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(-5%, -10%);
+	}
+	20% {
+		transform: translate(-15%, 0);
+	}
+	30% {
+		transform: translate(-5%, -10%);
+	}
+	40% {
+		transform: translate(-15%, 0);
+	}
+	50% {
+		transform: translate(-5%, -10%);
+	}
+	60% {
+		transform: translate(-15%, 0);
+	}
+	70% {
+		transform: translate(-5%, -10%);
+	}
+	80% {
+		transform: translate(-15%, 0);
+	}
+	90% {
+		transform: translate(-5%, -10%);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}

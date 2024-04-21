@@ -1,0 +1,29 @@
+{
+	// https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "next: chrome",
+			"type": "chrome",
+			"request": "launch",
+			"url": "http://localhost:3000",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"name": "next: node",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceFolder}/node_modules/.bin/next",
+			"args": ["dev"],
+			"autoAttachChildProcesses": true,
+			"skipFiles": ["<node_internals>/**"],
+			"console": "integratedTerminal"
+		}
+	],
+	"compounds": [
+		{
+			"name": "next: full",
+			"configurations": ["next: node", "next: chrome"]
+		}
+	]
+}

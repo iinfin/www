@@ -1,0 +1,29 @@
+name: Bug Report
+description: File a bug report
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Description
+
+        Please provide a clear and concise description of the bug.
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Please provide the steps to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Please add any additional context that might help.
