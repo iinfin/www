@@ -15,28 +15,8 @@ export function generateCsp() {
 		{ name: 'manifest-src', values: ["'self'"] },
 		{ name: 'media-src', values: ["'self'", 'i.vimeocdn.com', 'f.vimeocdn.com'] },
 		{ name: 'object-src', values: ["'none'"] },
-		{
-			name: 'style-src',
-			values: [
-				// style-src
-				"'report-sample'",
-				"'self'",
-				"'unsafe-inline'",
-				`'nonce-${nonce}'`,
-			],
-		},
-		{
-			name: 'script-src',
-			values: [
-				// script-src
-				"'report-sample'",
-				"'self'",
-				"'unsafe-inline'",
-				`'nonce-${nonce}'`,
-				// "'strict-dynamic'",
-				'player.vimeo.com',
-			],
-		},
+		{ name: 'style-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`] },
+		{ name: 'script-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`, "'strict-dynamic'", 'player.vimeo.com'] },
 	];
 
 	const cspHeader = cspObj
