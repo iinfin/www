@@ -62,7 +62,7 @@ export default function VideoElement({ videoUrl, confidential }: VideoElementPro
 					loop
 					muted
 					playsInline
-					className="h-full w-full object-cover"
+					className="pointer-events-none h-full w-full object-cover"
 				></video>
 			</div>
 			{confidential ? (
