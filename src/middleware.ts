@@ -16,7 +16,16 @@ export function generateCsp() {
 		{ name: 'media-src', values: ["'self'", 'i.vimeocdn.com', 'f.vimeocdn.com'] },
 		{ name: 'object-src', values: ["'none'"] },
 		{ name: 'style-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`] },
-		{ name: 'script-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`, "'strict-dynamic'", 'player.vimeo.com'] },
+		{
+			name: 'script-src',
+			values: [
+				"'report-sample'",
+				"'self'",
+				`'nonce-${nonce}'`,
+				// "'strict-dynamic'",
+				'player.vimeo.com',
+			],
+		},
 	];
 
 	const cspHeader = cspObj
@@ -60,13 +69,6 @@ export function middleware(_req: NextRequest, _fetch: NextFetchEvent) {
 
 export const config = {
 	matcher: [
-		/*
-		 * Match all request paths except for the ones starting with:
-		 * - api (API routes)
-		 * - _next/static (static files)
-		 * - _next/image (image optimization files)
-		 * - favicon.ico (favicon file)
-		 */
 		{
 			source: '/((?!api|_next/static|_next/image|favicon.ico).*)',
 			missing: [
