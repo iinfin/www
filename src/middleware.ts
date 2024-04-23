@@ -44,12 +44,21 @@ export function generateCsp() {
 				'cdn.u29dc.com',
 			],
 		},
-		{ name: 'style-src', values: ["'report-sample'", "'self'", `'nonce-${nonce}'`] },
+		{
+			name: 'style-src',
+			values: [
+				"'report-sample'",
+				"'self'",
+				"'unsafe-inline'",
+				// `'nonce-${nonce}'`
+			],
+		},
 		{
 			name: 'script-src',
 			values: [
 				"'report-sample'",
 				"'self'",
+				// "'unsafe-inline'",
 				`'nonce-${nonce}'`,
 				"'strict-dynamic'",
 				// 'player.vimeo.com'
@@ -98,12 +107,13 @@ export function middleware(_req: NextRequest, _fetch: NextFetchEvent) {
 
 export const config = {
 	matcher: [
-		{
-			source: '/((?!api|_next/static|_next/image|favicon.ico).*)',
-			missing: [
-				{ type: 'header', key: 'next-router-prefetch' },
-				{ type: 'header', key: 'purpose', value: 'prefetch' },
-			],
-		},
+		/*
+		 * Match all request paths except for the ones starting with:
+		 * - api (API routes)
+		 * - _next/static (static files)
+		 * - _next/image (image optimization files)
+		 * - favicon.ico (favicon file)
+		 */
+		'/((?!api|_next/static|_next/image|favicon.ico).*)',
 	],
 };
