@@ -1,3 +1,9 @@
+# [1.2.0](https://github.com/u29dc/www/compare/v1.1.1...v1.2.0) (2024-04-23)
+
+### Features
+
+-   **app:** add preload ([947865c](https://github.com/u29dc/www/commit/947865c8775c69410f81a245156e604d771a3e4e))
+
 ## [1.1.1](https://github.com/u29dc/www/compare/v1.1.0...v1.1.1) (2024-04-21)
 
 ### Bug Fixes
