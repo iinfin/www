@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/u29dc/www/compare/v1.1.0...v1.1.1) (2024-04-21)
+
+### Bug Fixes
+
+-   **app:** disable video interaction ([b7c129a](https://github.com/u29dc/www/commit/b7c129a9fccba002491bfffbb20a0128d3212b53))
+
 # [1.1.0](https://github.com/u29dc/www/compare/v1.0.2...v1.1.0) (2024-04-21)
 
 ### Features
