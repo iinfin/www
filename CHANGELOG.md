@@ -1,3 +1,9 @@
+# [1.3.0](https://github.com/u29dc/www/compare/v1.2.0...v1.3.0) (2024-04-24)
+
+### Features
+
+-   **app:** optimise images ([fe4f0bd](https://github.com/u29dc/www/commit/fe4f0bdcc311267fd712d6e8f001322f1a1fae38))
+
 # [1.2.0](https://github.com/u29dc/www/compare/v1.1.1...v1.2.0) (2024-04-23)
 
 ### Features
