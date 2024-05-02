@@ -28,6 +28,7 @@
 	"dependencies": {
 		"@next/bundle-analyzer": "^14.2.3",
 		"@vercel/analytics": "^1.2.2",
+		"@vercel/speed-insights": "^1.0.10",
 		"autoprefixer": "^10.4.19",
 		"contentful": "^10.9.2",
 		"cssnano": "^7.0.1",
