@@ -1,11 +1,9 @@
-# IINFIN
+# U29DC
 
-<!--
-![GitHub](https://img.shields.io/github/license/u29dc/www)
-![GitHub workflow (prchecks)](https://img.shields.io/github/actions/workflow/status/u29dc/www/prchecks.yml?logo=github&label=checks)
-![GitHub workflow (release)](https://img.shields.io/github/actions/workflow/status/u29dc/www/release.yml?logo=github&label=release)
-![GitHub release](https://img.shields.io/github/v/release/u29dc/www)
--->
+![GitHub](https://img.shields.io/github/license/iinfin/www)
+![GitHub workflow (prchecks)](https://img.shields.io/github/actions/workflow/status/iinfin/www/prchecks.yml?logo=github&label=checks)
+![GitHub workflow (release)](https://img.shields.io/github/actions/workflow/status/iinfin/www/release.yml?logo=github&label=release)
+![GitHub release](https://img.shields.io/github/v/release/iinfin/www)
 
 ```
 .
