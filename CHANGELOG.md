@@ -1,3 +1,9 @@
+## [1.3.3](https://github.com/u29dc/www/compare/v1.3.2...v1.3.3) (2024-05-02)
+
+### Bug Fixes
+
+-   **app:** typo ([06cfe75](https://github.com/u29dc/www/commit/06cfe75a54d25ffee3a897bc6ac497674a74e754))
+
 ## [1.3.2](https://github.com/u29dc/www/compare/v1.3.1...v1.3.2) (2024-05-02)
 
 ## [1.3.1](https://github.com/u29dc/www/compare/v1.3.0...v1.3.1) (2024-05-02)
