@@ -5,7 +5,7 @@ import { renderList } from '@/utils/List';
 
 const listClients: ListItem[] = [
 	// listClients
-	'CLIENTS & COLLABORATORS',
+	'SELECTED CLIENTS:',
 	'',
 	'PORSCHE',
 	'LOTUS_CARS',
@@ -18,10 +18,12 @@ const listClients: ListItem[] = [
 
 const listServices: ListItem[] = [
 	// listServices
-	'SERVICES',
+	'SERVICES:',
 	'',
 	'CONCEPT DESIGN',
 	'ART DIRECTION',
+	'EXPERIENTIAL DESIGN',
+	'CG PRODUCTION',
 ];
 
 export default function Info(): ReactElement {
