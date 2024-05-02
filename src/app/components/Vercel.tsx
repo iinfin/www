@@ -7,8 +7,8 @@ import type { ReactElement } from 'react';
 export default function Analytics(): ReactElement {
 	return (
 		<>
-			<VercelAnalytics />;
-			<VercelSpeedInsights />;
+			<VercelAnalytics />
+			<VercelSpeedInsights />
 		</>
 	);
 }
