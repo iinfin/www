@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/u29dc/www/compare/v1.3.3...v1.4.0) (2024-05-10)
+
+### Features
+
+-   **app:** preload fonts ([f1571db](https://github.com/u29dc/www/commit/f1571dbb89b691414748ebc76a99bf7df7cd3168))
+-   **app:** update content ([0e8e779](https://github.com/u29dc/www/commit/0e8e779d2cdfa7a25b1618019709db438030f4aa))
+
 ## [1.3.3](https://github.com/u29dc/www/compare/v1.3.2...v1.3.3) (2024-05-02)
 
 ### Bug Fixes
