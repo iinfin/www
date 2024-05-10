@@ -10,5 +10,5 @@ export default function Preload() {
 	ReactDOM.preconnect('https://cdn.u29dc.com/', { crossOrigin: 'anonymous' });
 	ReactDOM.prefetchDNS('https://cdn.u29dc.com/');
 
-	return null;
+	return <></>;
 }
