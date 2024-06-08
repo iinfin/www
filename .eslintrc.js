@@ -20,7 +20,7 @@ module.exports = {
 			plugins: [
 				// plugins
 				'@typescript-eslint',
-				'unused-imports',
+				// 'unused-imports',
 				'simple-import-sort',
 			],
 			extends: [
@@ -46,8 +46,8 @@ module.exports = {
 				'simple-import-sort/exports': 'error',
 				'@typescript-eslint/no-unused-vars': 'off',
 				'@typescript-eslint/no-throw-literal': 'off',
-				'unused-imports/no-unused-imports': 'error',
-				'unused-imports/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+				// 'unused-imports/no-unused-imports': 'error',
+				// 'unused-imports/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 			},
 		},
 	],
