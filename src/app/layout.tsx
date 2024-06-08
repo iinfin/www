@@ -2,7 +2,7 @@ import './styles/global.css';
 
 import MetadataTemplate from '@/components/Metadata';
 import Preload from '@/components/Preload';
-import Vercel from '@/components/Vercel';
+// import Vercel from '@/components/Vercel';
 
 export const metadata = MetadataTemplate;
 
@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body>
 				<main className="flex-start relative flex h-full w-full flex-col overflow-auto">{children}</main>
 				<div className="overlay"></div>
-				<Vercel />
+				{/* <Vercel /> */}
 			</body>
 		</html>
 	);
