@@ -1,3 +1,13 @@
+# [1.5.0](https://github.com/u29dc/www/compare/v1.4.1...v1.5.0) (2024-06-08)
+
+### Bug Fixes
+
+-   **app:** eslint dependencies ([612aac9](https://github.com/u29dc/www/commit/612aac98255e1f25fd8a3048459dc1baf4d65d9b))
+
+### Features
+
+-   **app:** disable vercel ([f90f270](https://github.com/u29dc/www/commit/f90f270200f3e45cada3dac68e22b1d8ab4e764a))
+
 ## [1.4.1](https://github.com/u29dc/www/compare/v1.4.0...v1.4.1) (2024-05-21)
 
 # [1.4.0](https://github.com/u29dc/www/compare/v1.3.3...v1.4.0) (2024-05-10)
