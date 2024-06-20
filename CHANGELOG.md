@@ -1,3 +1,9 @@
+# [1.6.0](https://github.com/u29dc/www/compare/v1.5.0...v1.6.0) (2024-06-20)
+
+### Features
+
+-   **app:** update noise ([f2cea33](https://github.com/u29dc/www/commit/f2cea3320841c2c1fa3e4224085e85149bff3659))
+
 # [1.5.0](https://github.com/u29dc/www/compare/v1.4.1...v1.5.0) (2024-06-08)
 
 ### Bug Fixes
