@@ -31,6 +31,7 @@ export function generateCsp() {
 			values: [
 				"'self'",
 				'data:',
+				'cdn.u29dc.com',
 				// 'i.vimeocdn.com',
 			],
 		},

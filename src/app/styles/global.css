@@ -109,11 +109,11 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	opacity: 0.1;
+	opacity: 0.15;
 	animation: animateGrain 10s steps(10) infinite;
-	background-image: url('/assets/images/noise.webp');
-	width: 300%;
-	height: 300%;
+	background-image: url('https://cdn.u29dc.com/_noise.webp'), url('/assets/images/_noise.webp');
+	width: 200%;
+	height: 200%;
 	pointer-events: none;
 }
 

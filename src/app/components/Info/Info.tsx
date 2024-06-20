@@ -20,8 +20,8 @@ const listServices: ListItem[] = [
 	// listServices
 	'SERVICES:',
 	'',
-	'CONCEPT DESIGN',
-	'ART DIRECTION',
+	'ART/FILM DIRECTION',
+	'CREATIVE RESEARCH',
 	'EXPERIENTIAL DESIGN',
 	'CG PRODUCTION',
 ];
