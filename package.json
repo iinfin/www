@@ -47,8 +47,8 @@
 		"@semantic-release/git": "^10.0.1",
 		"@semantic-release/github": "^10.0.6",
 		"@semantic-release/npm": "^12.0.1",
-		"@semantic-release/release-notes-generator": "^14.0.0",
-		"@types/node": "^20.14.6",
+		"@semantic-release/release-notes-generator": "^14.0.1",
+		"@types/node": "^20.14.8",
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
 		"@typescript-eslint/eslint-plugin": "^7.13.1",
@@ -67,7 +67,7 @@
 		"eslint-plugin-react": "^7.34.3",
 		"eslint-plugin-react-hooks": "^4.6.2",
 		"eslint-plugin-simple-import-sort": "^12.1.0",
-		"eslint-plugin-tailwindcss": "^3.17.3",
+		"eslint-plugin-tailwindcss": "^3.17.4",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.7",
 		"postcss": "^8.4.38",
@@ -78,7 +78,7 @@
 		"sass": "^1.77.6",
 		"semantic-release": "^24.0.0",
 		"stylelint": "^16.6.1",
-		"stylelint-config-recommended": "^14.0.0",
+		"stylelint-config-recommended": "^14.0.1",
 		"stylelint-config-tailwindcss": "^0.0.7",
 		"typescript": "^5.5.2"
 	}
