@@ -37,7 +37,7 @@ body {
 @media (prefers-color-scheme: dark) {
 	html,
 	body {
-		@apply bg-black-x1 text-white-x3;
+		@apply bg-black-x1 text-white-x1;
 	}
 }
 
@@ -109,7 +109,7 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	opacity: 0.15;
+	opacity: 0.1;
 	animation: animateGrain 10s steps(10) infinite;
 	background-image: url('https://cdn.u29dc.com/_noise.webp'), url('/assets/images/_noise.webp');
 	width: 200%;
