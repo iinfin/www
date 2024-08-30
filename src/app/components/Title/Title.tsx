@@ -5,9 +5,8 @@ import { renderList } from '@/utils/List';
 
 const listNavigation: ListItem[] = [
 	// listNavigation
-	{ INFORMATION: 'https://u29dc.co/' },
-	{ SHOWREEL: 'https://u29dc.co/' },
-	{ PORTFOLIO: 'https://u29dc.co/' },
+	{ INFORMATION: 'https://u29dc.co/linkedin' },
+	{ PORTFOLIO: 'https://u29dc.co/instagram' },
 ];
 
 export default function Title(): ReactElement {
