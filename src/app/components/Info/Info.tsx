@@ -21,9 +21,9 @@ const listServices: ListItem[] = [
 	'SERVICES:',
 	'',
 	'ART/FILM DIRECTION',
-	'CREATIVE RESEARCH',
-	'EXPERIENTIAL DESIGN',
 	'CG PRODUCTION',
+	'EXPERIENTIAL DESIGN',
+	'CREATIVE STRATEGY',
 ];
 
 export default function Info(): ReactElement {
