@@ -1,5 +1,7 @@
 import type { ReactElement } from 'react';
 
+import AnimationWrapper from '@/components/_Atoms/AnimationWrapper';
+
 // import type { ListItem } from '@/utils/List';
 // import { renderList } from '@/utils/List';
 
@@ -38,14 +40,18 @@ export default function Title(): ReactElement {
 		<div className="col-span-6 mb-10 grid grid-cols-6 gap-2">
 			<div className="col-span-3 col-start-4 row-start-1 text-right sm:text-left md:col-span-1 md:col-start-1"></div>
 			<div className="col-span-3 col-start-1 row-start-1 md:col-span-1 md:col-start-3">
-				— AN INCOMPLETE
-				<br />
-				INFINITY
-				{/* {renderList(listNavigation)} */}
+				<AnimationWrapper index={1}>
+					— AN INCOMPLETE
+					<br />
+					INFINITY
+					{/* {renderList(listNavigation)} */}
+				</AnimationWrapper>
 			</div>
 			<div className="col-span-6 col-start-1 md:col-span-3 md:col-start-4">
-				<p className="font-subtitle">U29DC</p>
-				<p>(IINFIN)</p>
+				<AnimationWrapper index={2}>
+					<p className="font-subtitle">U29DC</p>
+					<p>(IINFIN)</p>
+				</AnimationWrapper>
 			</div>
 			<div className="col-span-6 col-start-1 grid grid-cols-6 md:col-start-3 md:grid-cols-3 lg:col-span-3 lg:col-start-3">
 				<div className="col-span-6 hidden md:col-span-2 md:block">
@@ -54,9 +60,11 @@ export default function Title(): ReactElement {
 					INFINITY */}
 				</div>
 				<div className="col-span-6 row-start-2 sm:col-span-4 md:col-span-3 lg:col-span-1 lg:col-start-2">
-					<p>
-						<span className="flex flex-grow flex-wrap justify-between text-justify">{subtitleItems.map(renderSubtitle)}</span>
-					</p>
+					<AnimationWrapper index={3}>
+						<p>
+							<span className="flex flex-grow flex-wrap justify-between text-justify">{subtitleItems.map(renderSubtitle)}</span>
+						</p>
+					</AnimationWrapper>
 				</div>
 			</div>
 		</div>

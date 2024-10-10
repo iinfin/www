@@ -1,5 +1,7 @@
 import type { ReactElement } from 'react';
 
+import AnimationWrapper from '@/components/_Atoms/AnimationWrapper';
+
 // import type { ListItem } from '@/utils/List';
 // import { renderList } from '@/utils/List';
 
@@ -19,28 +21,42 @@ export default function Contact(): ReactElement {
 			<div className="col-span-6 col-start-1 flex h-full flex-row justify-between md:col-span-1 md:col-start-4 md:flex-col">
 				<span className="flex-grow text-right sm:text-left md:flex-grow-0">
 					{/* {renderList(listProfiles)} */}
-					<a href="https://u29dc.co/cal">BOOK A CALL ↗</a>
+					<AnimationWrapper index={1}>
+						<a href="https://u29dc.co/cal">BOOK A CALL ↗</a>
+					</AnimationWrapper>
 				</span>
 			</div>
 
 			<div className="col-span-6 col-start-1 flex h-full flex-row justify-between md:col-span-1 md:col-start-5 md:flex-row">
-				<span className="w-1/2">EMAIL →</span>
+				<span className="w-1/2">
+					<AnimationWrapper index={2}>EMAIL →</AnimationWrapper>
+				</span>
 				<span className="flex-grow text-right sm:text-left md:flex-grow-0">
-					<a href="mailto:han@u29dc.com">han@u29dc.com</a>
+					<a href="mailto:han@u29dc.com">
+						<AnimationWrapper index={5}>han@u29dc.com</AnimationWrapper>
+					</a>
 				</span>
 			</div>
 
 			<div className="col-span-6 col-start-1 flex h-full flex-row justify-between md:col-span-1 md:col-start-5 md:flex-row">
-				<span className="w-1/2">INSTAGRAM →</span>
+				<span className="w-1/2">
+					<AnimationWrapper index={3}>INSTAGRAM →</AnimationWrapper>
+				</span>
 				<span className="flex-grow text-right sm:text-left md:flex-grow-0">
-					<a href="https://instagram.com/u29dc">@u29dc</a>
+					<AnimationWrapper index={6}>
+						<a href="https://instagram.com/u29dc">@u29dc</a>
+					</AnimationWrapper>
 				</span>
 			</div>
 
 			<div className="col-span-6 col-start-1 flex h-full flex-row justify-between md:col-span-1 md:col-start-5 md:flex-row">
-				<span className="w-1/2">LINKEDIN →</span>
+				<span className="w-1/2">
+					<AnimationWrapper index={4}>LINKEDIN →</AnimationWrapper>
+				</span>
 				<span className="flex-grow text-right sm:text-left md:flex-grow-0">
-					<a href="https://linkedin.com/in/u29dc">@u29dc</a>
+					<AnimationWrapper index={7}>
+						<a href="https://linkedin.com/in/u29dc">@u29dc</a>
+					</AnimationWrapper>
 				</span>
 			</div>
 		</div>
