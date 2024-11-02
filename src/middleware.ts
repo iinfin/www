@@ -2,7 +2,7 @@ import type { NextFetchEvent, NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
 export function generateCsp() {
-	const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
+	// const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
 	const cspObj = [
 		{ name: 'base-uri', values: ["'self'"] },
 		{ name: 'connect-src', values: ["'self'", '*.vercel-insights.com'] },
@@ -28,11 +28,11 @@ export function generateCsp() {
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 
-	return { cspHeader, nonce };
+	return { cspHeader };
 }
 
 export function middleware(_req: NextRequest, _fetch: NextFetchEvent) {
-	const { cspHeader, nonce } = generateCsp();
+	const { cspHeader } = generateCsp();
 
 	const mwRequestHeaders = new Headers(_req.headers);
 	mwRequestHeaders.set('content-security-policy', cspHeader);
