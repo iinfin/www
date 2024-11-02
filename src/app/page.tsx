@@ -1,5 +1,5 @@
 // import { headers } from 'next/headers';
-import Script from 'next/script';
+// import Script from 'next/script';
 
 import Contact from '@/components/Contact/Contact';
 import Info from '@/components/Info/Info';
@@ -11,7 +11,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Script src="https://googletagmanager.com/gtag/js" strategy="afterInteractive" nonce={nonce} />
+			{/* <Script src="https://googletagmanager.com/gtag/js" strategy="afterInteractive" nonce={nonce} /> */}
 
 			<Contact />
 			<Info />
