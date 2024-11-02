@@ -1,10 +1,6 @@
 export default function robots() {
 	return {
-		rules: [
-			{
-				userAgent: '*',
-			},
-		],
+		rules: [{ userAgent: '*' }],
 		host: 'https://u29dc.com',
 	};
 }
