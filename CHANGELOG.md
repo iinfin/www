@@ -1,3 +1,9 @@
+# [1.8.0](https://github.com/iinfin/www/compare/v1.7.0...v1.8.0) (2024-11-02)
+
+### Features
+
+-   **app:** add animation stagger and cleanup ([509db9a](https://github.com/iinfin/www/commit/509db9a1218676806f58f0d010943f0e18fd133b))
+
 # [1.7.0](https://github.com/iinfin/www/compare/v1.6.2...v1.7.0) (2024-11-02)
 
 ### Bug Fixes
