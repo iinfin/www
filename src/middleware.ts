@@ -16,7 +16,7 @@ export function generateCsp() {
 		{ name: 'manifest-src', values: ["'self'"] },
 		{ name: 'media-src', values: ["'self'", 'cdn.u29dc.com'] },
 		{ name: 'style-src', values: ["'report-sample'", "'self'", "'unsafe-inline'"] },
-		{ name: 'script-src', values: ["'report-sample'", "'self'", "'strict-dynamic'"] },
+		{ name: 'script-src', values: ["'report-sample'", "'self'", "'unsafe-inline'"] },
 	];
 
 	const cspHeader = cspObj
