@@ -6,6 +6,8 @@ import type { Work } from '@/lib/cms';
 import { getAllWorks } from '@/lib/cms';
 
 export default async function Works(): Promise<ReactElement> {
+	const animationIndexStart = 15;
+
 	let works: Work[] = [];
 	try {
 		works = await getAllWorks();
@@ -23,29 +25,15 @@ export default async function Works(): Promise<ReactElement> {
 				{works.length > 0 ? (
 					works.map((work: Work, index: number) => (
 						<div key={work.id} className="work col-span-6 mb-20 grid grid-cols-6">
-							{' '}
-							{/* Add index to stagger */}
 							<div className="col-span-6 col-start-1 row-start-1 mb-5 md:col-span-4 md:col-start-3 lg:col-span-3 lg:col-start-4">
-								<AnimationWrapper key={work.id} index={index}>
+								<AnimationWrapper index={animationIndexStart + index}>
 									{work.videoCover ? <VideoElement videoUrl={work.videoCover} confidential={work.confidential} /> : <></>}
 								</AnimationWrapper>
 							</div>
-							{/* <div className="col-span-6 row-start-2 md:col-span-1 md:col-start-1 md:row-start-3 lg:col-span-1 lg:col-start-3">
-								{work.roles ? (
-									work.roles.map((role, index) => (
-										<span key={role}>
-											{role}
-											{index < work.roles.length - 1 ? ', ' : ''}
-										</span>
-									))
-								) : (
-									<></>
-								)}
-							</div> */}
 							<div className="col-span-6 row-start-4 md:col-span-1 md:col-start-3 md:row-start-3 lg:col-span-1 lg:col-start-4">
 								{work.clients ? (
 									work.clients.map((client, clientIndex) => (
-										<AnimationWrapper key={work.id} index={index}>
+										<AnimationWrapper key={clientIndex} index={animationIndexStart + index}>
 											<span key={client}>
 												{client}
 												{clientIndex < work.clients.length - 1 ? ', ' : ''}
@@ -57,7 +45,7 @@ export default async function Works(): Promise<ReactElement> {
 								)}
 							</div>
 							<div className="col-span-6 row-start-3 md:col-span-3 md:col-start-3 md:row-start-2 lg:col-span-3 lg:col-start-4">
-								<AnimationWrapper key={work.id} index={index}>
+								<AnimationWrapper index={animationIndexStart + index}>
 									<div className="font-heading-04 lg:font-heading-01">{work.title}</div>
 								</AnimationWrapper>
 							</div>

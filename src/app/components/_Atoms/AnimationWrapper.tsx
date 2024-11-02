@@ -15,9 +15,9 @@ export default function AnimatedWrapper({
 	// parameters
 	children,
 	index = 0,
-	baseDelay = 0.2,
+	baseDelay = 0.1,
 	offsetY = -5,
-	duration = 0.5,
+	duration = 0.3,
 }: AnimatedWrapperProps): ReactElement {
 	const delay = index * baseDelay;
 
