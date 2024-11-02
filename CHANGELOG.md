@@ -1,3 +1,19 @@
+# [1.7.0](https://github.com/iinfin/www/compare/v1.6.2...v1.7.0) (2024-11-02)
+
+### Bug Fixes
+
+-   **app:** cleanup ([ee419bb](https://github.com/iinfin/www/commit/ee419bb16dc66532513764717daced5a3b519198))
+-   **app:** csp ([936b687](https://github.com/iinfin/www/commit/936b687badd05c9dcf20056d88f2ddb18f3063e0))
+-   **app:** middleware ([ec2d192](https://github.com/iinfin/www/commit/ec2d1923edb670f68c8f2527dcf0d9ce192cba60))
+-   **app:** middleware ([a9ccb76](https://github.com/iinfin/www/commit/a9ccb76a63d0093f99581df7dacbee8ffa74c4cd))
+-   **app:** middleware cleanup ([9a29093](https://github.com/iinfin/www/commit/9a290935d01e6e895450efb256d7f4e77b8ce60d))
+-   **app:** remove unused nonce ([340c5d2](https://github.com/iinfin/www/commit/340c5d255033418f4e1535446c201f442b4d682e))
+-   **github:** release ([66831bf](https://github.com/iinfin/www/commit/66831bf041aca81fd2b637b46298199b27ca4c57))
+
+### Features
+
+-   **app:** add animation ([70d5a0e](https://github.com/iinfin/www/commit/70d5a0e059f40af182b622dd49924af7ab1281c8))
+
 ## [1.6.2](https://github.com/u29dc/www/compare/v1.6.1...v1.6.2) (2024-08-12)
 
 ## [1.6.1](https://github.com/u29dc/www/compare/v1.6.0...v1.6.1) (2024-08-06)
