@@ -18,12 +18,12 @@ const listClients: ListItem[] = [
 
 const listServices: ListItem[] = [
 	// listServices
-	'SERVICES:',
+	'SERVICE AREAS:',
 	'',
-	'ART/FILM DIRECTION',
-	'CG PRODUCTION',
-	'EXPERIENTIAL DESIGN',
 	'CREATIVE STRATEGY',
+	'EXPERIENTIAL DESIGN',
+	'ART/FILM DIRECTION',
+	'CONTENT PRODUCTION',
 ];
 
 export default function Info(): ReactElement {
@@ -31,8 +31,9 @@ export default function Info(): ReactElement {
 		<div className="col-span-6 mb-10 grid grid-cols-6 gap-2">
 			<div className="col-span-1 col-start-1 row-start-1 hidden md:block">
 				<AnimationWrapper index={1}>
-					CREATIVE LEAD &<br />
-					ART DIRECTOR
+					CREATIVE PARTNER FOR
+					<br />
+					BRANDS OF THE FUTURE
 				</AnimationWrapper>
 			</div>
 
@@ -49,11 +50,11 @@ export default function Info(): ReactElement {
 			</div>
 
 			<div className="col-span-1 col-start-6 row-start-1 hidden h-fit justify-self-end lg:block">
-				<AnimationWrapper index={5}>
+				{/* <AnimationWrapper index={5}>
 					<a target="_blank" href="https://github.com/u29dc">
 						/SRC
 					</a>
-				</AnimationWrapper>
+				</AnimationWrapper> */}
 			</div>
 		</div>
 	);
