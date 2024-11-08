@@ -1,3 +1,9 @@
+## [1.8.3](https://github.com/iinfin/www/compare/v1.8.2...v1.8.3) (2024-11-08)
+
+### Bug Fixes
+
+-   **app:** csp ([deb4f43](https://github.com/iinfin/www/commit/deb4f43300f8e763a3090240e575bf8fb15eb362))
+
 ## [1.8.2](https://github.com/iinfin/www/compare/v1.8.1...v1.8.2) (2024-11-08)
 
 ## [1.8.1](https://github.com/iinfin/www/compare/v1.8.0...v1.8.1) (2024-11-08)
