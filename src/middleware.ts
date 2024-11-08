@@ -17,7 +17,7 @@ export function generateCsp() {
 		{ name: 'object-src', values: ["'none'"] },
 		{ name: 'report-to', values: ['csp-endpoint'] },
 		{ name: 'report-uri', values: ['https://u29dc.report-uri.com/r/d/csp/enforce'] },
-		{ name: 'require-trusted-types-for', values: ["'script'"] },
+		// { name: 'require-trusted-types-for', values: ["'script'"] },
 		{ name: 'script-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`, "'strict-dynamic'", 'http:', 'https:'] },
 		{ name: 'style-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`] },
 	];
