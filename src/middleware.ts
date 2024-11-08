@@ -15,8 +15,7 @@ export function generateCsp() {
 		{ name: 'img-src', values: ["'self'", 'data:', 'cdn.u29dc.com'] },
 		{ name: 'manifest-src', values: ["'self'"] },
 		{ name: 'media-src', values: ["'self'", 'cdn.u29dc.com'] },
-
-		{ name: 'style-src', values: ["'report-sample'", "'self'" /* "'unsafe-inline'" */, `'nonce-${nonce}'`] },
+		{ name: 'style-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`] },
 		{ name: 'script-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`, "'strict-dynamic'", 'http:', 'https:'] },
 	];
 
