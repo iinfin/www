@@ -7,7 +7,6 @@ export function generateCsp() {
 		{ name: 'base-uri', values: ["'self'"] },
 		{ name: 'connect-src', values: ["'self'", '*.vercel-insights.com'] },
 		{ name: 'default-src', values: ["'self'"] },
-		{ name: 'object-src', values: ["'none'"] },
 		{ name: 'font-src', values: ["'self'"] },
 		{ name: 'form-action', values: ["'self'"] },
 		{ name: 'frame-ancestors', values: ["'none'"] },
@@ -15,8 +14,12 @@ export function generateCsp() {
 		{ name: 'img-src', values: ["'self'", 'data:', 'cdn.u29dc.com'] },
 		{ name: 'manifest-src', values: ["'self'"] },
 		{ name: 'media-src', values: ["'self'", 'cdn.u29dc.com'] },
-		{ name: 'style-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`] },
+		{ name: 'object-src', values: ["'none'"] },
+		{ name: 'report-to', values: ['csp-endpoint'] },
+		{ name: 'report-uri', values: ['https://u29dc.report-uri.com/r/d/csp/enforce'] },
+		{ name: 'require-trusted-types-for', values: ["'script'"] },
 		{ name: 'script-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`, "'strict-dynamic'", 'http:', 'https:'] },
+		{ name: 'style-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`] },
 	];
 
 	const cspHeader = cspObj
@@ -40,6 +43,16 @@ export function middleware(_req: NextRequest, _fetch: NextFetchEvent) {
 
 	// Apply Content Security Policy header
 	mwResponse.headers.set('content-security-policy', cspHeader);
+
+	// Add the Report-To header
+	mwResponse.headers.set(
+		'report-to',
+		JSON.stringify({
+			group: 'csp-endpoint',
+			max_age: 60 * 60 * 24 * 30, // 30 days
+			endpoints: [{ url: 'https://u29dc.report-uri.com/r/d/csp/enforce' }],
+		}),
+	);
 
 	// Apply headers conditionally based on path
 	if (!path.startsWith('/api')) {
