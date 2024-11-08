@@ -22,7 +22,7 @@ export function generateCsp() {
 	const cspHeader = cspObj
 		.map((directive) => `${directive.name} ${directive.values.join(' ')}`)
 		.join('; ')
-		.concat('; upgrade-insecure-requests') // Correct per documentation
+		.concat('; upgrade-insecure-requests')
 		.trim();
 
 	return { cspHeader, nonce };
