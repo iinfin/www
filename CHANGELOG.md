@@ -1,3 +1,9 @@
+## [1.8.1](https://github.com/iinfin/www/compare/v1.8.0...v1.8.1) (2024-11-08)
+
+### Bug Fixes
+
+-   **app:** add style unsafe inline ([d8f32da](https://github.com/iinfin/www/commit/d8f32dae3cd092fac84e7f6157c060ddf2284f4a))
+
 # [1.8.0](https://github.com/iinfin/www/compare/v1.7.0...v1.8.0) (2024-11-02)
 
 ### Features
