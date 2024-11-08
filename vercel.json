@@ -1,40 +1,5 @@
 {
 	"github": {
 		"silent": true
-	},
-	"headers": [
-		{
-			"source": "/(.*)",
-			"headers": [
-				{
-					"key": "Permissions-Policy",
-					"value": "fullscreen=(self)"
-				},
-				{
-					"key": "Referrer-Policy",
-					"value": "same-origin"
-				},
-				{
-					"key": "Strict-Transport-Security",
-					"value": "max-age=31557600; includesubdomains; preload"
-				},
-				{
-					"key": "Vary",
-					"value": "Accept-Encoding"
-				},
-				{
-					"key": "X-Content-Type-Options",
-					"value": "nosniff"
-				},
-				{
-					"key": "X-Frame-Options",
-					"value": "deny"
-				},
-				{
-					"key": "X-XSS-Protection",
-					"value": "1; mode=block"
-				}
-			]
-		}
-	]
+	}
 }
