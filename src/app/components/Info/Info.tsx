@@ -9,21 +9,21 @@ const listClients: ListItem[] = [
 	'SELECTED CLIENTS:',
 	'',
 	'PORSCHE',
-	'LOTUS_CARS',
-	'OUTERNET_LONDON',
-	'COCA_COLA',
-	'SONAR_ISTANBUL',
-	'WALLPAPER_MAGAZINE',
+	'LOTUS CARS',
+	'OUTERNET LONDON',
+	'COCA COLA',
+	'SONAR ISTANBUL',
+	'WALLPAPER MAGAZINE',
 	'~',
 ];
 
-const listServices: ListItem[] = [
-	// listServices
-	'SERVICE AREAS:',
+const listAreas: ListItem[] = [
+	// listAreas
+	'AREAS:',
 	'',
 	'CREATIVE STRATEGY',
 	'EXPERIENTIAL DESIGN',
-	'ART/FILM DIRECTION',
+	'FILM DIRECTION',
 	'CONTENT PRODUCTION',
 ];
 
@@ -49,7 +49,7 @@ export default function Info(): ReactElement {
 			</div>
 
 			<div className="col-span-1 col-start-6 row-start-1 hidden md:block xl:col-start-5">
-				<AnimationWrapper index={animationIndexStart + 4}>{renderList(listServices)}</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 4}>{renderList(listAreas)}</AnimationWrapper>
 			</div>
 
 			<div className="col-span-1 col-start-6 row-start-1 hidden h-fit justify-self-end lg:block">
