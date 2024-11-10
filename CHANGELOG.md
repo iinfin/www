@@ -1,3 +1,5 @@
+## [1.8.4](https://github.com/iinfin/www/compare/v1.8.3...v1.8.4) (2024-11-10)
+
 ## [1.8.3](https://github.com/iinfin/www/compare/v1.8.2...v1.8.3) (2024-11-08)
 
 ### Bug Fixes
