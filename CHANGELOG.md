@@ -1,3 +1,9 @@
+## [1.8.5](https://github.com/iinfin/www/compare/v1.8.4...v1.8.5) (2024-11-14)
+
+### Bug Fixes
+
+-   **app:** prevent fouc ([3fcca89](https://github.com/iinfin/www/commit/3fcca8967700af9a96e5c4417d8c75b6232e6566))
+
 ## [1.8.4](https://github.com/iinfin/www/compare/v1.8.3...v1.8.4) (2024-11-10)
 
 ## [1.8.3](https://github.com/iinfin/www/compare/v1.8.2...v1.8.3) (2024-11-08)
