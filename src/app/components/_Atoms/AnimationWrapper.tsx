@@ -22,7 +22,12 @@ export default function AnimatedWrapper({
 	const delay = index * baseDelay;
 
 	return (
-		<motion.div initial={{ opacity: 0, y: offsetY }} animate={{ opacity: 1, y: 0 }} transition={{ duration, delay }}>
+		<motion.div
+			initial={{ opacity: 0, y: offsetY }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration, delay }}
+			className="animated" // Ensures initial opacity on render
+		>
 			{children}
 		</motion.div>
 	);

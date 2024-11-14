@@ -60,6 +60,10 @@ a:hover {
 	@apply underline opacity-50;
 }
 
+.animated {
+	opacity: 0;
+}
+
 .font-title {
 	@apply font-sans text-display-title;
 }
