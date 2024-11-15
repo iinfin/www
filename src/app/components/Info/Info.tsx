@@ -17,9 +17,9 @@ const listClients: ListItem[] = [
 	'~',
 ];
 
-const listAreas: ListItem[] = [
-	// listAreas
-	'AREAS:',
+const listExpertise: ListItem[] = [
+	// listExpertise
+	'EXPERTISE:',
 	'',
 	'CREATIVE STRATEGY',
 	'EXPERIENTIAL DESIGN',
@@ -49,7 +49,7 @@ export default function Info(): ReactElement {
 			</div>
 
 			<div className="col-span-1 col-start-6 row-start-1 hidden md:block xl:col-start-5">
-				<AnimationWrapper index={animationIndexStart + 4}>{renderList(listAreas)}</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 4}>{renderList(listExpertise)}</AnimationWrapper>
 			</div>
 
 			<div className="col-span-1 col-start-6 row-start-1 hidden h-fit justify-self-end lg:block">
