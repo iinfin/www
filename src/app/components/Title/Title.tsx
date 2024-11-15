@@ -22,10 +22,11 @@ export default function Title(): ReactElement {
 				</AnimationWrapper>
 			</div>
 			<div className="col-span-6 col-start-1 grid grid-cols-6 md:col-start-3 md:grid-cols-3 lg:col-span-3 lg:col-start-3">
-				<div className="col-span-6 row-start-2 sm:col-span-4 md:col-span-3 lg:col-span-1 lg:col-start-2">
+				<div className="col-span-6 row-start-2 mt-4 sm:col-span-4 md:col-span-3 lg:col-span-1 lg:col-start-2">
 					<AnimationWrapper index={animationIndexStart + 3}>
-						U29DC IS A SPECULATIVE, MULTIFACETED CREATIVE PRACTICE WORKING ACROSS FILM, IMMERSIVE EXPERIENCES, AND DESIGN LED STORYTELLING
-						- PARTNERING WITH BRANDS AND ORGANIZATIONS OF THE FUTURE
+						U29DC IS AN EVOLVING, MULTIFACETED CREATIVE PRACTICE. GUIDED BY PHILOSOPHY AND ENABLED BY TECHNOLOGY, WE CRAFT AESTHETIC
+						EXPERIENCES WITH COMPANIES AND INSTITUTIONS OF A BETTER FUTURE. EMBRACING AN ENIGMATIC STYLE, WE REFLECT ON ART AS AN
+						INCOMPLETE JOURNEY - IN SEARCH OF A TIMELESS BEAUTY.
 					</AnimationWrapper>
 				</div>
 			</div>
