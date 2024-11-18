@@ -45,11 +45,11 @@ export default function Info(): ReactElement {
 			</div>
 
 			<div className="col-span-6 col-start-1 row-start-2 md:col-span-1 md:col-start-4 md:row-start-1 xl:mb-0">
-				<AnimationWrapper index={animationIndexStart + 3}>{renderList(listClients)}</AnimationWrapper>
+				{renderList(listClients, animationIndexStart + 3)}
 			</div>
 
 			<div className="col-span-1 col-start-6 row-start-1 hidden md:block xl:col-start-5">
-				<AnimationWrapper index={animationIndexStart + 4}>{renderList(listExpertise)}</AnimationWrapper>
+				{renderList(listExpertise, animationIndexStart + 4)}
 			</div>
 
 			<div className="col-span-1 col-start-6 row-start-1 hidden h-fit justify-self-end lg:block">

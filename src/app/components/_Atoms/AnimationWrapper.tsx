@@ -12,10 +12,9 @@ interface AnimatedWrapperProps {
 }
 
 export default function AnimatedWrapper({
-	// parameters
 	children,
 	index = 0,
-	baseDelay = 0.1,
+	baseDelay = 0.1, // Base delay between animations
 	offsetY = -5,
 	duration = 0.3,
 }: AnimatedWrapperProps): ReactElement {
@@ -23,10 +22,11 @@ export default function AnimatedWrapper({
 
 	return (
 		<motion.div
+			// animated
 			initial={{ opacity: 0, y: offsetY }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration, delay }}
-			className="animated" // Ensures initial opacity on render
+			className="animated"
 		>
 			{children}
 		</motion.div>

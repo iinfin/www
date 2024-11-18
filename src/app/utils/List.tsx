@@ -1,5 +1,7 @@
 import type { ReactElement } from 'react';
 
+import AnimationWrapper from '@/components/_Atoms/AnimationWrapper';
+
 type ListItemString = string;
 type ListItemLink = { [key: string]: string };
 export type ListItem = ListItemString | ListItemLink;
@@ -30,12 +32,16 @@ const renderListItem = (item: ListItem): ReactElement => {
 	);
 };
 
-export const renderList = (items: ListItem[] = []): ReactElement => (
-	<ul>
-		{items.map((item, index) => (
-			<li key={index} className={getListItemClass(index, items)}>
-				{renderListItem(item)}
-			</li>
-		))}
-	</ul>
-);
+export const renderList = (items: ListItem[] = [], baseIndex = 0): ReactElement => {
+	const DELAY_INCREMENT = 1;
+
+	return (
+		<ul>
+			{items.map((item, index) => (
+				<AnimationWrapper key={index} index={baseIndex + index * DELAY_INCREMENT}>
+					<li className={getListItemClass(index, items)}>{renderListItem(item)}</li>
+				</AnimationWrapper>
+			))}
+		</ul>
+	);
+};
