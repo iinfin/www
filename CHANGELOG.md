@@ -1,3 +1,9 @@
+# [1.9.0](https://github.com/iinfin/www/compare/v1.8.7...v1.9.0) (2024-11-18)
+
+### Features
+
+-   **app:** improve animations ([ae6f093](https://github.com/iinfin/www/commit/ae6f0932624d92ccb67f21a6f47e5f9f31a13557))
+
 ## [1.8.7](https://github.com/iinfin/www/compare/v1.8.6...v1.8.7) (2024-11-15)
 
 ## [1.8.6](https://github.com/iinfin/www/compare/v1.8.5...v1.8.6) (2024-11-15)
