@@ -6,7 +6,7 @@ import { getAllWorks } from '@/lib/cms';
 import WorkItem from './WorkItem';
 
 export default async function Works(): Promise<ReactElement> {
-	const animationIndexStart = 15;
+	const animationIndexStart = 13;
 
 	let works: Work[] = [];
 	try {

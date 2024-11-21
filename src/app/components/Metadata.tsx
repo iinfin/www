@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 
-const siteTitle = 'U29DC (IINFIN)';
+const siteTitle = 'Incomplete Infinity (@U29DC)';
 const siteName = 'U29DC';
-const siteDescription = 'An evolving entity acting as a multifaceted practice, speculating artificial aesthetics across mediums.';
+const siteDescription =
+	'Incomplete Infinity is an evolving, multifaceted creative practice working with companies and institutions in pursuit of a better future. Embracing an enigmatic style, we create work that is completed by the viewer and lives on in their minds. ';
 const siteUrl = 'https://u29dc.com';
 
 const MetadataTemplate: Metadata = {

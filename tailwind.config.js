@@ -72,6 +72,9 @@ module.exports = {
 				'wide-half': '2/1',
 				'square': '1/1',
 			},
+			screens: {
+				'3xl': '2160px',
+			},
 		},
 	},
 	variants: {
