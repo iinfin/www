@@ -1,3 +1,5 @@
+## [1.9.2](https://github.com/iinfin/www/compare/v1.9.1...v1.9.2) (2024-11-21)
+
 ## [1.9.1](https://github.com/iinfin/www/compare/v1.9.0...v1.9.1) (2024-11-21)
 
 # [1.9.0](https://github.com/iinfin/www/compare/v1.8.7...v1.9.0) (2024-11-18)
