@@ -7,12 +7,20 @@ export default function Contact(): ReactElement {
 
 	return (
 		<div className="col-span-6 mb-10 grid grid-cols-6 gap-2">
+			<div className="col-span-1 col-start-1 row-start-2 hidden lg:block">
+				<AnimationWrapper index={animationIndexStart + 1}>
+					<div className="h-1 w-4 bg-white-x1 dark:bg-white-x1"></div>
+				</AnimationWrapper>
+			</div>
+
 			<div className="col-span-1 col-start-6 row-start-1 mb-4 h-fit justify-self-end md:mb-0 lg:block">
-				<div className="h-4 w-4 bg-white-x1 dark:bg-white-x1"></div>
+				<AnimationWrapper index={animationIndexStart + 1}>
+					<div className="h-4 w-4 bg-white-x1 dark:bg-white-x1"></div>
+				</AnimationWrapper>
 			</div>
 
 			<div className="row-start-2 hidden md:col-span-3 md:col-start-1 md:block lg:col-start-3">
-				<AnimationWrapper index={animationIndexStart + 1}>01 / GET IN TOUCH →</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 1}>01</AnimationWrapper>
 			</div>
 
 			<div className="col-span-3 col-start-1 row-start-2 md:col-span-3 md:col-start-3 lg:col-start-4">
