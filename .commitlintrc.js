@@ -4,7 +4,7 @@
 module.exports = {
 	extends: ['@commitlint/config-conventional'],
 	rules: {
-		// https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-rules.md
+		// https://github.com/conventional-changelog/commitlint/blob/master/docs/reference/rules.md
 
 		'type-case': [2, 'always', 'lower-case'],
 		'type-empty': [2, 'never'],
