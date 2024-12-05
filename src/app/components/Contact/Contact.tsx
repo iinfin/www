@@ -2,7 +2,11 @@ import type { ReactElement } from 'react';
 
 import AnimationWrapper from '@/components/_Atoms/AnimationWrapper';
 
-export default function Contact(): ReactElement {
+type ContactProps = {
+	showIndex?: boolean;
+};
+
+export default function Contact({ showIndex = true }: ContactProps): ReactElement {
 	const animationIndexStart = 0;
 
 	return (
@@ -19,21 +23,22 @@ export default function Contact(): ReactElement {
 				</AnimationWrapper>
 			</div>
 
-			<div className="row-start-2 hidden md:col-span-3 md:col-start-1 md:block lg:col-start-3">
-				<AnimationWrapper index={animationIndexStart + 1}>01</AnimationWrapper>
-			</div>
-
+			{showIndex && (
+				<div className="row-start-2 hidden md:col-span-3 md:col-start-1 md:block lg:col-start-3">
+					<AnimationWrapper index={animationIndexStart + 1}>01</AnimationWrapper>
+				</div>
+			)}
 			<div className="col-span-3 col-start-1 row-start-2 md:col-span-3 md:col-start-3 lg:col-start-4">
-				<AnimationWrapper index={animationIndexStart + 1}>EMAIL →</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 1}>CONTACT →</AnimationWrapper>
 			</div>
 			<div className="col-span-3 col-start-1 row-start-3 md:col-span-3 md:col-start-3 lg:col-start-4">
-				<AnimationWrapper index={animationIndexStart + 2}>CAL.COM →</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 2}>BOOK A CALL →</AnimationWrapper>
 			</div>
 			<div className="col-span-3 col-start-1 row-start-4 md:col-span-3 md:col-start-3 lg:col-start-4">
-				<AnimationWrapper index={animationIndexStart + 3}>INSTAGRAM →</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 3}>FOLLOW →</AnimationWrapper>
 			</div>
 			<div className="col-span-3 col-start-1 row-start-5 md:col-span-3 md:col-start-3 lg:col-start-4">
-				<AnimationWrapper index={animationIndexStart + 4}>LINKEDIN →</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 4}>CONNECT →</AnimationWrapper>
 			</div>
 
 			<div className="col-span-3 col-start-4 row-start-2 text-right md:col-span-2 md:col-start-5 md:text-left">
@@ -43,17 +48,17 @@ export default function Contact(): ReactElement {
 			</div>
 			<div className="col-span-3 col-start-4 row-start-3 text-right md:col-span-2 md:col-start-5 md:text-left">
 				<AnimationWrapper index={animationIndexStart + 2}>
-					<a href="https://cal.com/u29dc">@u29dc</a>
+					<a href="https://cal.com/u29dc">cal / @u29dc</a>
 				</AnimationWrapper>
 			</div>
 			<div className="col-span-3 col-start-4 row-start-4 text-right md:col-span-2 md:col-start-5 md:text-left">
 				<AnimationWrapper index={animationIndexStart + 3}>
-					<a href="https://instagram.com/u29dc">@u29dc</a>
+					<a href="https://instagram.com/u29dc">instagram / @u29dc</a>
 				</AnimationWrapper>
 			</div>
 			<div className="col-span-3 col-start-4 row-start-5 text-right md:col-span-2 md:col-start-5 md:text-left">
 				<AnimationWrapper index={animationIndexStart + 4}>
-					<a href="https://linkedin.com/company/u29dc">@u29dc</a>
+					<a href="https://linkedin.com/company/u29dc">linkedin / @u29dc</a>
 				</AnimationWrapper>
 			</div>
 		</div>

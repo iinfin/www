@@ -11,7 +11,6 @@ const listClients: ListItem[] = [
 	'PORSCHE',
 	'LOTUS',
 	'OUTERNET LONDON',
-	'COCA COLA',
 	'SONAR ISTANBUL',
 	'WALLPAPER MAGAZINE',
 	'~',

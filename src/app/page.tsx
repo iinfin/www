@@ -1,6 +1,6 @@
 import { headers } from 'next/headers';
-import Script from 'next/script';
 
+// import Script from 'next/script';
 import Contact from '@/components/Contact/Contact';
 import Info from '@/components/Info/Info';
 import Title from '@/components/Title/Title';
@@ -11,13 +11,13 @@ export default async function Home() {
 
 	return (
 		<>
-			<Script src="https://www.googletagmanager.com/gtag/js" strategy="afterInteractive" nonce={nonce} />
+			{/* <Script src="https://www.googletagmanager.com/gtag/js" strategy="afterInteractive" nonce={nonce} /> */}
 
-			<Contact />
+			<Contact showIndex={true} />
 			<Info />
 			<Title />
 			<Works />
-			<Contact />
+			<Contact showIndex={false} />
 		</>
 	);
 }
