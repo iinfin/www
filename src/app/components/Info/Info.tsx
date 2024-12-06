@@ -4,26 +4,25 @@ import AnimationWrapper from '@/components/_Atoms/AnimationWrapper';
 import type { ListItem } from '@/utils/List';
 import { renderList } from '@/utils/List';
 
-const listClients: ListItem[] = [
-	// listClients
-	'SELECTED CLIENTS:',
-	'',
-	'PORSCHE',
-	'LOTUS',
-	'OUTERNET LONDON',
-	'SONAR ISTANBUL',
-	'WALLPAPER MAGAZINE',
-	'~',
-];
+// const listClients: ListItem[] = [
+// 	// listClients
+// 	'SELECTED CLIENTS:',
+// 	'',
+// 	'PORSCHE',
+// 	'LOTUS',
+// 	'OUTERNET LONDON',
+// 	'SONAR ISTANBUL',
+// 	'WALLPAPER MAGAZINE',
+// 	'~',
+// ];
 
 const listServices: ListItem[] = [
 	// listServices
 	'SERVICES:',
 	'',
-	'CREATIVE STRATEGY',
-	'EXPERIENTIAL DESIGN',
-	'FILM DIRECTION',
-	'CONTENT PRODUCTION',
+	'CREATIVE STRATEGY,',
+	'DIRECTION',
+	'PRODUCTION',
 ];
 
 export default function Info(): ReactElement {
@@ -38,12 +37,14 @@ export default function Info(): ReactElement {
 			</div>
 
 			<div className="col-span-6 col-start-1 row-start-1 hidden md:col-span-1 md:col-start-1 md:row-start-1 md:block lg:col-start-3">
-				<AnimationWrapper index={animationIndexStart + 1}>02</AnimationWrapper>
+				<div className="w-full pr-20 text-right">
+					<AnimationWrapper index={animationIndexStart + 1}>02</AnimationWrapper>
+				</div>
 			</div>
 
-			<div className="col-span-6 col-start-1 row-start-2 md:col-span-1 md:col-start-3 md:row-start-1 lg:col-start-4">
+			{/* <div className="col-span-6 col-start-1 row-start-2 md:col-span-1 md:col-start-3 md:row-start-1 lg:col-start-4">
 				{renderList(listClients, animationIndexStart + 2)}
-			</div>
+			</div> */}
 
 			<div className="col-span-1 col-start-6 row-start-1 hidden md:col-start-5 md:block lg:col-start-5">
 				{renderList(listServices, animationIndexStart + 3)}

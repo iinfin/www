@@ -14,7 +14,9 @@ export default function Title(): ReactElement {
 			</div>
 
 			<div className="col-span-3 col-start-1 row-start-1 hidden md:col-span-1 md:col-start-1 md:block lg:col-start-3">
-				<AnimationWrapper index={animationIndexStart + 2}>03</AnimationWrapper>
+				<div className="w-full pr-20 text-right">
+					<AnimationWrapper index={animationIndexStart + 2}>03</AnimationWrapper>
+				</div>
 			</div>
 
 			<div className="col-span-6 col-start-1 md:col-span-3 md:col-start-3 lg:col-start-4">

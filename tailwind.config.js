@@ -45,8 +45,8 @@ module.exports = {
 				'heading-03': '2.4rem',
 				'heading-04': '1.8rem',
 				'body': '1.2rem',
-				'caption-01': '1.1rem',
-				'caption-02': '1rem',
+				'caption-01': '1rem',
+				'caption-02': '0.9rem',
 			},
 			fontWeight: {
 				default: 500,

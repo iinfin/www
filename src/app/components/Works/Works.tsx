@@ -17,7 +17,7 @@ export default async function Works(): Promise<ReactElement> {
 	}
 
 	return (
-		<div className="mb-100 col-span-6 grid grid-cols-6 gap-2 md:mb-40">
+		<div className="col-span-6 mb-10 grid grid-cols-6 gap-2">
 			{works.length > 0 && works.map((work, index) => <WorkItem key={work.id} work={work} baseIndex={animationIndexStart + index * 2} />)}
 		</div>
 	);

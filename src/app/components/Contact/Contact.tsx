@@ -24,8 +24,10 @@ export default function Contact({ showIndex = true }: ContactProps): ReactElemen
 			</div>
 
 			{showIndex && (
-				<div className="row-start-2 hidden md:col-span-3 md:col-start-1 md:block lg:col-start-3">
-					<AnimationWrapper index={animationIndexStart + 1}>01</AnimationWrapper>
+				<div className="col-span-3 row-start-2 hidden md:col-span-1 md:col-start-1 md:block lg:col-start-3">
+					<div className="w-full pr-20 text-right">
+						<AnimationWrapper index={animationIndexStart + 1}>01</AnimationWrapper>
+					</div>
 				</div>
 			)}
 			<div className="col-span-3 col-start-1 row-start-2 md:col-span-3 md:col-start-3 lg:col-start-4">
