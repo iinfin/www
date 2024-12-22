@@ -31,36 +31,24 @@ export default function Contact({ showIndex = true }: ContactProps): ReactElemen
 				</div>
 			)}
 			<div className="col-span-3 col-start-1 row-start-2 md:col-span-3 md:col-start-3 lg:col-start-4">
-				<AnimationWrapper index={animationIndexStart + 1}>CONTACT →</AnimationWrapper>
-			</div>
-			<div className="col-span-3 col-start-1 row-start-3 md:col-span-3 md:col-start-3 lg:col-start-4">
-				<AnimationWrapper index={animationIndexStart + 2}>BOOK A CALL →</AnimationWrapper>
-			</div>
-			<div className="col-span-3 col-start-1 row-start-4 md:col-span-3 md:col-start-3 lg:col-start-4">
-				<AnimationWrapper index={animationIndexStart + 3}>FOLLOW →</AnimationWrapper>
-			</div>
-			<div className="col-span-3 col-start-1 row-start-5 md:col-span-3 md:col-start-3 lg:col-start-4">
-				<AnimationWrapper index={animationIndexStart + 4}>CONNECT →</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 1}>↳ CONTACT</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 2}>↳ BOOK A CALL</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 3}>↳ FOLLOW</AnimationWrapper>
+				<AnimationWrapper index={animationIndexStart + 4}>↳ CONNECT</AnimationWrapper>
 			</div>
 
 			<div className="col-span-3 col-start-4 row-start-2 text-right md:col-span-2 md:col-start-5 md:text-left">
 				<AnimationWrapper index={animationIndexStart + 1}>
-					<a href="mailto:han@u29dc.com">han@u29dc.com</a>
+					<a href="mailto:han@u29dc.com">HAN@U29DC.COM</a>
 				</AnimationWrapper>
-			</div>
-			<div className="col-span-3 col-start-4 row-start-3 text-right md:col-span-2 md:col-start-5 md:text-left">
 				<AnimationWrapper index={animationIndexStart + 2}>
-					<a href="https://cal.com/u29dc">cal / @u29dc</a>
+					<a href="https://cal.com/u29dc">CAL@U29DC</a>
 				</AnimationWrapper>
-			</div>
-			<div className="col-span-3 col-start-4 row-start-4 text-right md:col-span-2 md:col-start-5 md:text-left">
 				<AnimationWrapper index={animationIndexStart + 3}>
-					<a href="https://instagram.com/u29dc">instagram / @u29dc</a>
+					<a href="https://instagram.com/u29dc">INSTAGRAM@U29DC</a>
 				</AnimationWrapper>
-			</div>
-			<div className="col-span-3 col-start-4 row-start-5 text-right md:col-span-2 md:col-start-5 md:text-left">
 				<AnimationWrapper index={animationIndexStart + 4}>
-					<a href="https://linkedin.com/company/u29dc">linkedin / @u29dc</a>
+					<a href="https://linkedin.com/in/u29dc">LINKEDIN@U29DC</a>
 				</AnimationWrapper>
 			</div>
 		</div>

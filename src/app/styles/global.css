@@ -34,15 +34,15 @@ body {
 	@apply bg-white-x1 text-black-x1;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	html,
 	body {
 		@apply bg-black-x1 text-white-x1;
 	}
-}
+} */
 
 body {
-	@apply p-10;
+	@apply p-2;
 	@apply font-caption-01 antialiased;
 }
 
@@ -105,6 +105,7 @@ a:hover {
 .font-caption-01,
 .font-caption-02 {
 	@apply font-default uppercase tracking-default;
+	/* line-height: 1.1; */
 }
 
 .overlay {
