@@ -114,8 +114,9 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	opacity: 0.06;
-	animation: animateGrain 10s steps(10) infinite;
+	opacity: 0.2;
+	/* mix-blend-mode: difference; */
+	animation: animateGrain 5s steps(10) infinite;
 	background-image: url('https://cdn.u29dc.com/_noise.webp'), url('/assets/images/_noise.webp');
 	width: 200%;
 	height: 200%;
