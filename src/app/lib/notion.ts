@@ -4,7 +4,7 @@ import { unstable_cache } from 'next/cache';
 import type { Work } from './cms';
 
 const { NOTION_API_KEY, NOTION_DATABASE_ID } = process.env;
-const REVALIDATE_TIME = 60 * 60 * 24 * 7; // 60 sec * 60 min * 24 hrs * 7 days = 1 week
+const REVALIDATE_TIME = 60 * 60 * 24; // 60 sec * 60 min * 24 hrs
 
 if (!NOTION_API_KEY || !NOTION_DATABASE_ID) {
 	throw new Error('Notion environment variables are not set');
