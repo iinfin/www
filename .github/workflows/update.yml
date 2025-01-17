@@ -1,8 +1,16 @@
 name: 'ci(github): upgrade packages'
+
 on:
   schedule:
-    - cron: '0 12 * * 0'
-  workflow_dispatch: # manually trigger the workflow from the Actions tab in GitHub
+    - cron: '0 12 * * 0' # Every Sunday at 12 PM UTC
+  workflow_dispatch: # Allows manual triggering
+
+concurrency:
+  group: upgrade-packages
+  cancel-in-progress: true
+
+permissions:
+  contents: write
 
 jobs:
   upgrade:
@@ -13,12 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: dev
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
@@ -33,9 +41,4 @@ jobs:
           git config --local user.name "github-actions"
           git config --local user.email "actions@users.noreply.github.com"
           git add .
-          if [[ $(git status --porcelain) ]]; then
-            git commit -m "chore(deps): update dependencies"
-            git push origin dev
-          else
-            echo "No changes to commit"
-          fi
+          git diff --exit-code || (git commit -m "chore(deps): update dependencies" && git push origin dev)
