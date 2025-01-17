@@ -1,24 +1,16 @@
-import { fetchWorksCollection } from './contentful';
+import { fetchWorksCollection } from './notion';
 
 // ===============================================
 
 export interface Work {
 	id: string;
-	confidential: boolean;
-	slug: string;
+	status: string;
 	title: string;
 	summary: string;
+	isConfidential: boolean;
+	video: string;
 	roles: string[];
 	clients: string[];
-	videoCover: string;
-	imageCover: {
-		url: string;
-	};
-	imageGalleryCollection: {
-		items: {
-			url: string;
-		}[];
-	};
 }
 
 export interface FetchData {
