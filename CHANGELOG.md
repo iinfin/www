@@ -1,3 +1,9 @@
+# [1.10.0](https://github.com/iinfin/www/compare/v1.9.7...v1.10.0) (2025-01-17)
+
+### Features
+
+- **app:** handle notion api limits ([b9aac82](https://github.com/iinfin/www/commit/b9aac82614c87ab115105e303c1f2425f50f4ab7))
+
 ## [1.9.7](https://github.com/iinfin/www/compare/v1.9.6...v1.9.7) (2025-01-04)
 
 ## [1.9.6](https://github.com/iinfin/www/compare/v1.9.5...v1.9.6) (2024-12-22)
