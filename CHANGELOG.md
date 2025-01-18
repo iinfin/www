@@ -1,3 +1,9 @@
+# [1.11.0](https://github.com/iinfin/www/compare/v1.10.1...v1.11.0) (2025-01-18)
+
+### Features
+
+- **app:** add exhibitions ([9a5c220](https://github.com/iinfin/www/commit/9a5c22013a279dbd840889e2b0905d520c644fd4))
+
 ## [1.10.1](https://github.com/iinfin/www/compare/v1.10.0...v1.10.1) (2025-01-17)
 
 # [1.10.0](https://github.com/iinfin/www/compare/v1.9.7...v1.10.0) (2025-01-17)
