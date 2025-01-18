@@ -14,7 +14,7 @@ interface AnimatedWrapperProps {
 export default function AnimatedWrapper({
 	children,
 	index = 0,
-	baseDelay = 0.1, // Base delay between animations
+	baseDelay = 0.12, // Base delay for staggered animations
 	offsetY = -5,
 	duration = 0.3,
 }: AnimatedWrapperProps): ReactElement {
