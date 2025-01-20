@@ -5,16 +5,29 @@ import type { Work } from './cms';
 
 const { NOTION_API_KEY, NOTION_DATABASE_ID } = process.env;
 const REVALIDATE_TIME = 60 * 60 * 24; // 60 sec * 60 min * 24 hrs
+const IS_DEV = process.env.NODE_ENV !== 'production';
+const MAX_RETRIES = 5;
 
 if (!NOTION_API_KEY || !NOTION_DATABASE_ID) {
 	throw new Error('Notion environment variables are not set');
 }
 
-const notion = new Client({
-	auth: NOTION_API_KEY,
-});
+const notion = new Client({ auth: NOTION_API_KEY });
 
-const MAX_RETRIES = 5;
+/**
+ * Normalizes work data:
+ * - Converts all string properties (except URLs) to uppercase.
+ * - Converts video and link URLs to lowercase.
+ */
+const normalizeWorkData = (work: Work): Work => ({
+	...work,
+	title: work.title.toUpperCase(),
+	summary: work.summary.toUpperCase(),
+	video: work.video.toLowerCase(),
+	link: work.link.toLowerCase(),
+	roles: work.roles.map((role) => role.toUpperCase()),
+	clients: work.clients.map((client) => client.toUpperCase()),
+});
 
 const fetchNotion = async (retryCount = 0): Promise<Work[]> => {
 	try {
@@ -28,24 +41,23 @@ const fetchNotion = async (retryCount = 0): Promise<Work[]> => {
 			throw new Error('Empty data received from Notion');
 		}
 
-		// Map results into Work objects
-		const works: Work[] = response.results.map((page) => {
+		return response.results.map((page) => {
 			const { properties } = page as any;
 
-			return {
-				id: page.id, // Unique ID from Notion
+			const work: Work = {
+				id: page.id,
 				title: properties.Title?.title?.[0]?.plain_text || '',
-				slug: properties.Slug?.rich_text?.[0]?.plain_text || '',
 				status: properties.Status?.status?.name || '',
 				summary: properties.Summary?.rich_text?.[0]?.plain_text || '',
 				isConfidential: properties.Confidential?.checkbox ?? false,
 				video: properties.Video?.url || '',
 				roles: properties.Roles?.multi_select?.map((role: any) => role.name) || [],
 				clients: properties.Clients?.multi_select?.map((client: any) => client.name) || [],
+				link: properties.Link?.url || '',
 			};
-		});
 
-		return works;
+			return normalizeWorkData(work);
+		});
 	} catch (error: any) {
 		if (error.code === 'rate_limited' && retryCount < MAX_RETRIES) {
 			const retryAfter = Number(error.response?.headers?.get('Retry-After')) || 2;
@@ -57,6 +69,7 @@ const fetchNotion = async (retryCount = 0): Promise<Work[]> => {
 			await new Promise((resolve) => {
 				setTimeout(resolve, delay);
 			});
+
 			return fetchNotion(retryCount + 1);
 		}
 
@@ -64,11 +77,9 @@ const fetchNotion = async (retryCount = 0): Promise<Work[]> => {
 	}
 };
 
-// Use Next.js cache to store results and revalidate every 1 week
+// Cache results with Next.js and revalidate every 24 hours
 const fetchCachedWorks = unstable_cache(fetchNotion, ['works'], { revalidate: REVALIDATE_TIME });
 
-const fetchWorksCollection = async (): Promise<Work[]> => {
-	return fetchCachedWorks();
-};
+const fetchWorksCollection = async (cache: boolean = !IS_DEV): Promise<Work[]> => (cache ? fetchCachedWorks() : fetchNotion());
 
 export { fetchNotion, fetchWorksCollection };

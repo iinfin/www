@@ -11,6 +11,7 @@ export interface Work {
 	video: string;
 	roles: string[];
 	clients: string[];
+	link: string;
 }
 
 export interface FetchData {
