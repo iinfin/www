@@ -1,4 +1,4 @@
-import { fetchWorksCollection } from './notion';
+import { fetchWorks } from './notion';
 
 // ===============================================
 
@@ -21,5 +21,5 @@ export interface FetchData {
 // ===============================================
 
 export const getAllWorks = async (): Promise<Work[]> => {
-	return fetchWorksCollection();
+	return fetchWorks();
 };

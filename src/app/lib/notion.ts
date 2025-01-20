@@ -14,11 +14,6 @@ if (!NOTION_API_KEY || !NOTION_DATABASE_ID) {
 
 const notion = new Client({ auth: NOTION_API_KEY });
 
-/**
- * Normalizes work data:
- * - Converts all string properties (except URLs) to uppercase.
- * - Converts video and link URLs to lowercase.
- */
 const normalizeWorkData = (work: Work): Work => ({
 	...work,
 	title: work.title.toUpperCase(),
@@ -77,9 +72,8 @@ const fetchNotion = async (retryCount = 0): Promise<Work[]> => {
 	}
 };
 
-// Cache results with Next.js and revalidate every 24 hours
 const fetchCachedWorks = unstable_cache(fetchNotion, ['works'], { revalidate: REVALIDATE_TIME });
 
-const fetchWorksCollection = async (cache: boolean = !IS_DEV): Promise<Work[]> => (cache ? fetchCachedWorks() : fetchNotion());
+const fetchWorks = async (cache: boolean = !IS_DEV): Promise<Work[]> => (cache ? fetchCachedWorks() : fetchNotion());
 
-export { fetchNotion, fetchWorksCollection };
+export { fetchWorks };
