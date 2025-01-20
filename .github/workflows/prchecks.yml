@@ -29,6 +29,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build the project
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: npm run build:prod
 
   test:
@@ -57,4 +60,7 @@ jobs:
       - name: Check - Types
         run: npm run util:types
       - name: Check - Tests
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: npm run test:all
