@@ -1,3 +1,14 @@
+# [1.12.0](https://github.com/iinfin/www/compare/v1.11.0...v1.12.0) (2025-01-20)
+
+### Bug Fixes
+
+- **github:** actions env ([776dec6](https://github.com/iinfin/www/commit/776dec64cd6eef0343eb1d43ad9b387ecae861b9))
+
+### Features
+
+- **app:** add link, tweak animations and cms logic ([3da3098](https://github.com/iinfin/www/commit/3da3098360bf4e2af33feea31397cee5882e4e7a))
+- **app:** add link, tweak animations and cms logic ([46b4f1e](https://github.com/iinfin/www/commit/46b4f1e8cce449b6c5b1cbe1408ce245ba2684ab))
+
 # [1.11.0](https://github.com/iinfin/www/compare/v1.10.1...v1.11.0) (2025-01-18)
 
 ### Features
