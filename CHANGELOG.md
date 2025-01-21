@@ -1,3 +1,9 @@
+## [1.12.1](https://github.com/iinfin/www/compare/v1.12.0...v1.12.1) (2025-01-21)
+
+### Bug Fixes
+
+- **app:** disable cache for now ([33d0fd5](https://github.com/iinfin/www/commit/33d0fd56f757d157299f3b54fe155625955897e0))
+
 # [1.12.0](https://github.com/iinfin/www/compare/v1.11.0...v1.12.0) (2025-01-20)
 
 ### Bug Fixes
