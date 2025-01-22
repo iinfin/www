@@ -18,8 +18,8 @@ const normalizeWorkData = (work: Work): Work => ({
 	...work,
 	title: work.title.toUpperCase(),
 	summary: work.summary.toUpperCase(),
-	video: work.video.toLowerCase(),
-	link: work.link.toLowerCase(),
+	// video: work.video.toLowerCase(),
+	// link: work.link.toLowerCase(),
 	roles: work.roles.map((role) => role.toUpperCase()),
 	clients: work.clients.map((client) => client.toUpperCase()),
 });
