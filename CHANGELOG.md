@@ -1,3 +1,9 @@
+## [1.12.2](https://github.com/iinfin/www/compare/v1.12.1...v1.12.2) (2025-01-22)
+
+### Bug Fixes
+
+- **app:** link normalisation ([ce23075](https://github.com/iinfin/www/commit/ce230753311de66c868405fe32dbffcc2f4d8e0d))
+
 ## [1.12.1](https://github.com/iinfin/www/compare/v1.12.0...v1.12.1) (2025-01-21)
 
 ### Bug Fixes
