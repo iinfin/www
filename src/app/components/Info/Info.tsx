@@ -29,7 +29,7 @@ export default function Info(): ReactElement {
 		<div className="col-span-6 mb-10 grid grid-cols-6 gap-2">
 			<div className="col-span-1 col-start-1 row-start-1 hidden lg:block">
 				<AnimationWrapper index={animationIndexStart + 1}>
-					<div className="h-1 w-4 bg-white-x1 dark:bg-white-x1"></div>
+					<div className="bg-white-x1 dark:bg-white-x1 h-1 w-4"></div>
 				</AnimationWrapper>
 			</div>
 

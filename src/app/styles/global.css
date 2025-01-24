@@ -1,5 +1,47 @@
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss';
+@import 'tailwindcss/preflight';
+
+@theme {
+	/* Fonts */
+	--font-sans: 'PPNeueMontreal', 'Inter var', 'Arial', sans-serif;
+	--font-mono: 'PPSupplyMono', 'Menlo', monospace;
+
+	/* Font Sizes */
+	--text-root: 10px;
+	--text-display-title: 16rem;
+	--text-display-subtitle: 4.8rem;
+	--text-heading-01: 7.6rem;
+	--text-heading-02: 4rem;
+	--text-heading-03: 2.4rem;
+	--text-heading-04: 1.8rem;
+	--text-body: 1.2rem;
+	--text-sm: 1rem;
+	--text-xs: 0.9rem;
+
+	/* Font Weight */
+	--font-weight-default: 500;
+
+	/* Letter Spacing */
+	--tracking-default: 0;
+
+	/* Colors */
+	--color-transparent: transparent;
+	--color-current: currentColor;
+	--color-black-x1: #000000;
+	--color-black-x2: #080808;
+	--color-white-x1: #ffffff;
+	--color-white-x2: #fafafa;
+	--color-white-x3: #f5f5f5;
+
+	/* Aspect Ratio */
+	--aspect-wide-full: 4 / 1;
+	--aspect-wide-half: 2 / 1;
+	--aspect-square: 1 / 1;
+
+	/* Breakpoints */
+	--breakpoint-3xl: 2160px;
+}
+
 @tailwind utilities;
 
 *::-webkit-scrollbar {
@@ -25,7 +67,7 @@
 
 html {
 	@apply m-0 p-0;
-	@apply select-none text-root;
+	@apply text-root select-none;
 }
 
 html,
@@ -34,16 +76,17 @@ body {
 	@apply bg-white-x1 text-black-x1;
 }
 
-/* @media (prefers-color-scheme: dark) {
+/* Dark Mode (optional) */
+@media (prefers-color-scheme: dark) {
 	html,
 	body {
-		@apply bg-black-x1 text-white-x1;
+		@apply bg-white-x1 text-black-x1;
 	}
-} */
+}
 
 body {
 	@apply p-2;
-	@apply font-caption-01 antialiased;
+	@apply font-sans text-sm antialiased;
 }
 
 h1,
@@ -64,36 +107,37 @@ a:hover {
 	opacity: 0;
 }
 
+/* Typography */
 .font-title {
-	@apply font-sans text-display-title;
+	@apply text-display-title font-sans;
 }
 
 .font-subtitle {
-	@apply font-sans text-display-subtitle;
+	@apply text-display-subtitle font-sans;
 }
 
 .font-heading-01 {
-	@apply font-sans text-heading-01;
+	@apply text-heading-01 font-sans;
 }
 
 .font-heading-02 {
-	@apply font-sans text-heading-02;
+	@apply text-heading-02 font-sans;
 }
 
 .font-heading-03 {
-	@apply font-sans text-heading-03;
+	@apply text-heading-03 font-sans;
 }
 
 .font-heading-04 {
-	@apply font-sans text-heading-04;
+	@apply text-heading-04 font-sans;
 }
 
 .font-caption-01 {
-	@apply font-sans text-caption-01;
+	@apply font-sans text-sm;
 }
 
 .font-caption-02 {
-	@apply font-sans text-caption-02;
+	@apply font-sans text-xs;
 }
 
 .font-title,
@@ -104,10 +148,10 @@ a:hover {
 .font-heading-04,
 .font-caption-01,
 .font-caption-02 {
-	@apply font-default uppercase tracking-default;
-	/* line-height: 1.1; */
+	@apply font-default tracking-default uppercase;
 }
 
+/* Overlay Animation */
 .overlay {
 	position: fixed;
 	top: 0;
@@ -115,7 +159,6 @@ a:hover {
 	bottom: 0;
 	left: 0;
 	opacity: 0.2;
-	/* mix-blend-mode: difference; */
 	animation: animateGrain 5s steps(10) infinite;
 	background-image: url('https://cdn.u29dc.com/_noise.webp'), url('/assets/images/_noise.webp');
 	width: 200%;
