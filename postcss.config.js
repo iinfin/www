@@ -2,8 +2,8 @@ const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 
 module.exports = {
 	plugins: {
-		tailwindcss: {},
-		autoprefixer: {},
+		'@tailwindcss/postcss': {},
+		'autoprefixer': {},
 		...(IS_PRODUCTION ? { cssnano: {} } : {}),
 	},
 };
