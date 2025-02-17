@@ -1,0 +1,35 @@
+[Settings]
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22.14.0"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = """
+      base-uri 'self';
+      connect-src 'self' *.vercel-insights.com;
+      default-src 'self';
+      font-src 'self';
+      form-action 'self';
+      frame-ancestors 'none';
+      frame-src 'self';
+      img-src 'self' data: cdn.u29dc.com;
+      manifest-src 'self';
+      media-src 'self' cdn.u29dc.com;
+      object-src 'none';
+      report-to csp-endpoint;
+      script-src 'report-sample' 'self' 'unsafe-inline' 'strict-dynamic' http: https:;
+      style-src 'report-sample' 'self' 'unsafe-inline';
+      upgrade-insecure-requests;
+    Permissions-Policy = "fullscreen=(self)"
+    Referrer-Policy = "same-origin"
+    Strict-Transport-Security = "max-age=31557600; includeSubDomains; preload"
+    Vary = "Accept-Encoding"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "deny"
+    X-XSS-Protection = "1; mode=block"

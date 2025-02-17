@@ -16,7 +16,7 @@ export function generateCsp() {
 		{ name: 'media-src', values: ["'self'", 'cdn.u29dc.com'] },
 		{ name: 'object-src', values: ["'none'"] },
 		{ name: 'report-to', values: ['csp-endpoint'] },
-		{ name: 'report-uri', values: ['https://u29dc.report-uri.com/r/d/csp/enforce'] },
+		{ name: 'report-uri', values: ['https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report'] },
 		// { name: 'require-trusted-types-for', values: ["'script'"] },
 		{ name: 'script-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`, "'strict-dynamic'", 'http:', 'https:'] },
 		{ name: 'style-src', values: ["'report-sample'", "'self'", "'unsafe-inline'", `'nonce-${nonce}'`] },
@@ -41,27 +41,14 @@ export function middleware(_req: NextRequest, _fetch: NextFetchEvent) {
 	const mwResponse = NextResponse.next({ request: { headers: mwRequestHeaders } });
 	const path = _req.nextUrl.pathname;
 
-	// Apply Content Security Policy header
 	mwResponse.headers.set('content-security-policy', cspHeader);
 
-	// Add the Report-To header
-	mwResponse.headers.set(
-		'report-to',
-		JSON.stringify({
-			group: 'csp-endpoint',
-			max_age: 60 * 60 * 24 * 30, // 30 days
-			endpoints: [{ url: 'https://u29dc.report-uri.com/r/d/csp/enforce' }],
-		}),
-	);
-
-	// Apply headers conditionally based on path
 	if (!path.startsWith('/api')) {
 		mwResponse.headers.set('x-xss-protection', '1; mode=block');
 		mwResponse.headers.set('x-frame-options', 'deny');
 		mwResponse.headers.set('permissions-policy', 'fullscreen=(self)');
 	}
 
-	// Apply global headers
 	mwResponse.headers.set('strict-transport-security', 'max-age=31557600; includeSubDomains; preload');
 	mwResponse.headers.set('x-content-type-options', 'nosniff');
 	mwResponse.headers.set('referrer-policy', 'same-origin');

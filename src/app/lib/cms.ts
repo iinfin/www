@@ -1,7 +1,5 @@
 import { fetchWorks } from './notion';
 
-// ===============================================
-
 export interface Work {
 	id: string;
 	status: string;
@@ -17,8 +15,6 @@ export interface Work {
 export interface FetchData {
 	[key: string]: any;
 }
-
-// ===============================================
 
 export const getAllWorks = async (): Promise<Work[]> => {
 	return fetchWorks();

@@ -5,7 +5,6 @@ import type { Work } from './cms';
 
 const { NOTION_API_KEY, NOTION_DATABASE_ID } = process.env;
 const REVALIDATE_TIME = 60 * 60 * 24; // 60 sec * 60 min * 24 hrs
-// const IS_DEV = process.env.NODE_ENV !== 'production';
 const MAX_RETRIES = 5;
 
 if (!NOTION_API_KEY || !NOTION_DATABASE_ID) {
@@ -74,7 +73,6 @@ const fetchNotion = async (retryCount = 0): Promise<Work[]> => {
 
 const fetchCachedWorks = unstable_cache(fetchNotion, ['works'], { revalidate: REVALIDATE_TIME });
 
-// const fetchWorks = async (cache: boolean = !IS_DEV): Promise<Work[]> => (cache ? fetchCachedWorks() : fetchNotion());
 const fetchWorks = async (cache: boolean = false): Promise<Work[]> => (cache ? fetchCachedWorks() : fetchNotion());
 
 export { fetchWorks };
