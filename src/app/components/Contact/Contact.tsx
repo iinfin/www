@@ -13,13 +13,13 @@ export default function Contact({ showIndex = true }: ContactProps): ReactElemen
 		<div className="col-span-6 mb-10 grid grid-cols-6 gap-2">
 			<div className="col-span-1 col-start-1 row-start-2 hidden lg:block">
 				<AnimationWrapper index={animationIndexStart + 1}>
-					<div className="h-1 w-4 bg-white-x1 dark:bg-white-x1"></div>
+					<div className="bg-white-x1 dark:bg-white-x1 h-1 w-4"></div>
 				</AnimationWrapper>
 			</div>
 
 			<div className="col-span-1 col-start-6 row-start-1 mb-4 h-fit justify-self-end md:mb-0 lg:block">
 				<AnimationWrapper index={animationIndexStart + 1}>
-					<div className="h-4 w-4 bg-white-x1 dark:bg-white-x1"></div>
+					<div className="bg-white-x1 dark:bg-white-x1 h-4 w-4"></div>
 				</AnimationWrapper>
 			</div>
 

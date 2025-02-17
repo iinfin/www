@@ -17,8 +17,8 @@ export default function VideoElement({ videoUrl, confidential }: VideoElementPro
 	// }, []);
 
 	return (
-		<div className="video-container relative aspect-wide-full">
-			<div className="absolute left-0 top-0 z-0 h-full w-full bg-black-x1 opacity-80 dark:bg-white-x1 dark:opacity-10"></div>
+		<div className="video-container aspect-wide-full relative">
+			<div className="bg-black-x1 dark:bg-white-x1 absolute top-0 left-0 z-0 h-full w-full opacity-80 dark:opacity-10"></div>
 			<div className="relative h-full w-full overflow-hidden">
 				{/* {isLoaded ? (
 					<ReactPlayer
@@ -66,8 +66,8 @@ export default function VideoElement({ videoUrl, confidential }: VideoElementPro
 				></video>
 			</div>
 			{confidential ? (
-				<div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-full">
-					<div className="font-heading-04 flex h-full w-full items-center justify-center text-white-x1">CONFIDENTIAL</div>
+				<div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-full">
+					<div className="font-heading-04 text-white-x1 flex h-full w-full items-center justify-center">CONFIDENTIAL</div>
 				</div>
 			) : (
 				<></>
