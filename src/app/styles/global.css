@@ -1,5 +1,31 @@
 @import 'tailwindcss';
-@import 'tailwindcss/preflight';
+
+@layer base {
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		margin: 0;
+	}
+
+	button,
+	input,
+	textarea,
+	select {
+		border: none;
+		background: none;
+		font-family: inherit;
+	}
+}
 
 @theme {
 	--font-sans: 'PPNeueMontreal', 'Inter var', 'Arial', sans-serif;
@@ -35,8 +61,6 @@
 	--breakpoint-3xl: 2160px;
 }
 
-@tailwind utilities;
-
 *::-webkit-scrollbar {
 	display: none;
 }
@@ -69,7 +93,6 @@ body {
 	@apply bg-white-x1 text-black-x1;
 }
 
-/* Dark Mode (optional) */
 @media (prefers-color-scheme: dark) {
 	html,
 	body {
@@ -100,7 +123,6 @@ a:hover {
 	opacity: 0;
 }
 
-/* Typography */
 .font-title {
 	@apply text-display-title font-sans;
 }

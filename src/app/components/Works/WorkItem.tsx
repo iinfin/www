@@ -15,7 +15,7 @@ export default function WorkItem({ work, baseIndex }: WorkItemProps): ReactEleme
 	const DELAY_CLIENT = 0.05;
 
 	return (
-		<div className="work col-span-6 mb-20 grid grid-cols-6">
+		<div className="work col-span-6 mb-4 grid grid-cols-6">
 			<div className="3xl:col-span-3 3xl:col-start-4 col-span-6 col-start-1 row-start-1 mb-5 md:col-span-4 md:col-start-3">
 				<AnimationWrapper index={baseIndex}>
 					{work.video ? <VideoElement videoUrl={work.video} confidential={work.isConfidential} /> : null}
