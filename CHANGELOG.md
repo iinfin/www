@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/iinfin/www/compare/v1.12.2...v1.12.3) (2025-02-17)
+
+### Bug Fixes
+
+- **app:** remove tailwind nesting ([5e5bf91](https://github.com/iinfin/www/commit/5e5bf91f50753a61569cf2f33e47d22d803f7847))
+- **app:** separate tailwind postcss ([a7df184](https://github.com/iinfin/www/commit/a7df1844fb77cbcfd92cab78446821bacc31838a))
+
 ## [1.12.2](https://github.com/iinfin/www/compare/v1.12.1...v1.12.2) (2025-01-22)
 
 ### Bug Fixes
