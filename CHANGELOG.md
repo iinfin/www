@@ -1,3 +1,9 @@
+## [1.12.4](https://github.com/iinfin/www/compare/v1.12.3...v1.12.4) (2025-02-18)
+
+### Bug Fixes
+
+- **styles:** defaults ([3910b32](https://github.com/iinfin/www/commit/3910b32a815322238b185ca22e214a6ac1a1793c))
+
 ## [1.12.3](https://github.com/iinfin/www/compare/v1.12.2...v1.12.3) (2025-02-17)
 
 ### Bug Fixes
