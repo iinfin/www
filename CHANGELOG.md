@@ -1,3 +1,5 @@
+## [1.12.5](https://github.com/iinfin/www/compare/v1.12.4...v1.12.5) (2025-03-13)
+
 ## [1.12.4](https://github.com/iinfin/www/compare/v1.12.3...v1.12.4) (2025-02-18)
 
 ### Bug Fixes
